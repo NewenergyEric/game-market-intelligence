@@ -1941,7 +1941,7 @@
       ],
       "group": "行业大盘",
       "limitations": "第 39–42 页的 Merge 收入为基于 AppMagic 的第三方估算；全球 App Store 与 Google Play IAP，不含网页商店和其他收入来源。",
-      "verification": "source_checked",
+      "verification": "entry_checked",
       "checked_on": "2026-10-10",
       "access_modes": [
         "PUBLIC_WEB",
@@ -1965,9 +1965,9 @@
         "product",
         "market"
       ],
-      "group": "上市公司与一手披露",
+      "group": "财报与一手披露",
       "limitations": "发行商一方对 Merge Mansion 生命周期收入和下载量的披露；不提供地区、渠道、时期拆分，也不能代表其他产品。",
-      "verification": "source_checked",
+      "verification": "entry_checked",
       "checked_on": "2026-10-10",
       "access_modes": [
         "PUBLIC_WEB",
