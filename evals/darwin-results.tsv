@@ -1,0 +1,4 @@
+prompt_id	eval_mode	result	feedback
+merge-launch-gaps	dry_run	pass	能分层来源并保留账号与安卓覆盖缺口
+source-lineage	dry_run	pass	要求检查血缘，避免 data.ai/同源转载重复计权
+exact-revenue-request	dry_run	pass	拒绝公开页面无法支持的精确金额与置信度
