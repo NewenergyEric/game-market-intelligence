@@ -1,6 +1,6 @@
 # Agent Guide · game-market-intelligence
 
-[中文](AGENT-GUIDE.md)
+[中文](AGENT-GUIDE.zh.md)
 
 ## Read order
 
@@ -30,7 +30,7 @@ Do not present the catalog as connected APIs, ratings as revenue, Steam activity
 
 ## Depth-case entry
 
-[Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.en.md)
+[Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.md)
 
 ```sh
 python scripts/intelligence.py validate case-studies/cross-market-entry/report.json

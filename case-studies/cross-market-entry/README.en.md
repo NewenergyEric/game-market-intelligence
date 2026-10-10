@@ -1,6 +1,6 @@
 # Six lenses that change a product decision
 
-[中文](README.md)
+[中文](README.zh.md)
 
 **Producer question:** “What are our community-game options? How do we compare Merge mobile, licensed-IP social and premium PC? Which region/language test should come first?”
 
@@ -40,4 +40,4 @@ python scripts/intelligence.py validate case-studies/cross-market-entry/report.j
 python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market-entry
 ```
 
-Produces the report, comparison matrix and source record. The recommendation remains proposed. Keep the [Merge revenue drill-down](../merge-community-public-signals/README.en.md) for a narrower question.
+Produces the report, comparison matrix and source record. The recommendation remains proposed. Keep the [Merge revenue drill-down](../merge-community-public-signals/README.md) for a narrower question.

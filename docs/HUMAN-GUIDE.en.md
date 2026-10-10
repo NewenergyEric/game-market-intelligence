@@ -1,3 +1,5 @@
+[中文](HUMAN-GUIDE.zh.md)
+
 # Game Market Intelligence Director · Human guide
 
 A market decision connects audience and genre with IP, regional channels, culture, payment, competition and team capacity. This Skill guides your agent through evidence-backed comparisons and turns critical gaps into concrete research tasks.
@@ -24,6 +26,6 @@ Separate product capability from commercial performance; assign CPI/LTV, IP term
 
 79 domestic and international source entries are not 79 connected APIs. Title estimates, company segments and storefront observations retain their own scope. Language support is not regional revenue; a licensed competitor IP does not grant us usage rights. This case contains no ad experiment or unavailable paid data.
 
-[Reproducible case](../case-studies/cross-market-entry/README.en.md)
+[Reproducible case](../case-studies/cross-market-entry/README.md)
 
-[Agent guide](AGENT-GUIDE.en.md)
+[Agent guide](AGENT-GUIDE.md)

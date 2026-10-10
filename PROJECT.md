@@ -1,5 +1,7 @@
-# 游戏市场研究总监
+# Game Market Intelligence Director
 
-选择国内外研究来源、统一口径、组织证据并形成决策报告。
+[中文](PROJECT.zh.md)
 
-当前项目入口已迁至 [README.md](README.md)，Agent 工作入口为 [SKILL.md](SKILL.md)。本岗位的完成条件及后续实现见 [ROADMAP.md](ROADMAP.md)。
+Compare markets, genres, IP and business models with evidence.
+
+Start with [README](README.md), use [SKILL.md](SKILL.md) for agent work, and see [ROADMAP](ROADMAP.md) for verified scope and remaining work. The [four-role workflow](docs/WORKFLOW.md) explains handoffs for teams and solo creators.

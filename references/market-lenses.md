@@ -1,32 +1,34 @@
-# 从经营问题选择分析视角
+[中文](market-lenses.zh.md)
 
-用户不必预先填写全部字段。先提炼正在做的决定，再选择会改变该决定的视角；不相关项记录 `not_applicable` 与原因。
+# Choose lenses around the business decision
 
-| 视角 | 具体要拆什么 | 证据与实际输出 |
+Extract the decision first. Select the lenses that could change it; mark irrelevant lenses `not_applicable` with a reason rather than making the user fill every field.
+
+| Lens | Examine | Evidence and output |
 |---|---|---|
-| 类型与体验 | 主/次类型、核心循环、单局时长、社交结构、内容消耗、平台适配 | 对标组及入组/排除理由；区分产品自述、用户标签与实际观察 |
-| 玩家与动机 | 收集、表达、竞争、掌控、社交；新老用户、付费/非付费、使用场景 | 分层访谈或评论样本；说明抽样方式，不能把几个差评当整体满意度 |
-| IP与内容 | 原创/授权/衍生、认知与人群重合、地域/平台/期限、保底与分成、审批与素材产能 | 官方合作证据、待确认条款、与原创路线分开的成本情景；知名度不等于增量转化 |
-| 地区与渠道 | 国家/地区、商店、设备、分发渠道、发行可达性、竞争密度 | 同口径国家×渠道矩阵；全球成绩不能直接分摊到某国 |
-| 语言与文化 | 界面/字幕/语音分别支持；文本量、字体、长度、文化表达、客服与社区 | 本地化范围与样本测试；简中不是中国收入，英语也不是美国收入 |
-| 付费与单位经济 | 买断、IAP、广告、订阅、DLC/通行证、混合模式、平台净额/税/退款 | 每种模式独立的收入链路；毛流水、净收入、贡献利润分列 |
-| 获客与运营 | 付费/自然、素材卖点、渠道归因、活动节奏、内容更新、留存 | 同地区/队列的 CPI、留存和 LTV；无我方数据先给取数与验证方案 |
-| 制作可行性 | 团队产能、技术依赖、内容吞吐、授权/本地化/运营成本 | 成本与产能情景、最小验证、负责人和停止条件，不给伪精确成功率 |
+| Genre and experience | Primary/secondary genre, loop, session length, social structure, content consumption, platform fit | Comparison group and inclusion/exclusion criteria; distinguish marketing claims, tags and direct observation |
+| Players and motivation | Collection, expression, competition, mastery, belonging; new/returning and paying/non-paying segments | Segmented interviews or review samples with sampling limitations |
+| IP and content | Original/licensed/derivative, audience overlap, territory/platform/term, guarantees/royalties, approval and content capacity | Official partnership evidence, unknown contract terms, separate original/licensed cost scenarios |
+| Region and channels | Country, store, device, distribution, launch accessibility, competitive density | Comparable country × channel matrix; never allocate global results to individual countries without evidence |
+| Language and culture | Interface/subtitles/voice separately; text volume, typography, length, cultural expression, support/community | Localization scope and sample tests; Simplified Chinese is not China revenue, English is not US revenue |
+| Monetization | Premium, IAP, ads, subscription, DLC/pass, hybrid; tax/fees/refunds | Separate revenue paths and gross receipts, net revenue and contribution margin |
+| Acquisition and live operations | Paid/organic, creative proposition, attribution, event/content cadence, retention | CPI, retention and LTV with aligned region/cohort; data acquisition plan when unavailable |
+| Production feasibility | Team capacity, dependencies, content throughput, licensing/localization/live-ops cost | Cost/capacity scenarios, minimum test, owner and stop condition; no invented success probability |
 
-## 交叉判断的写法
+## Cross-lens judgment
 
-每条判断写成：**证据 → 适用的细分市场 → 业务机制 → 我方影响 → 反证/下一次验证**。
+Write **evidence → applicable segment → business mechanism → implication for us → falsification/next test**.
 
-- “支持日语”只能证明语言供给。进入日本还要核实本地商店可达性、同类型竞品、当地获客与付费漏斗；测试招募必须按地区和语言分别标记。
-- 授权 IP 可以提供熟悉的角色与认知入口；是否降低 CPI 或提高留存需要对照测试。没有授权报价、审批周期与地域范围，不把该路线写成已可执行。
-- F2P 的 LTV/CPI 与买断的净售价/退款/获客成本分开计算。先统一队列、期限、币种和平台口径；缺一项就列缺口，不能把 Steam 评价数量与手游 IAP 排成营收榜。
-- 使用低/中/高情景时，每个输入标 `observed / estimate / assumption`，说明来源和敏感参数。情景不是预测，也不是立项批准。
+- Japanese support establishes language supply. Japan entry also needs store accessibility, local competitors and acquisition/payment funnel evidence. Record recruitment region and language separately.
+- Familiar licensed characters may help recognition; whether they lower CPI or improve retention needs a controlled test. Unknown quotes, approval lead times and territorial terms keep the route unready.
+- Separate F2P LTV/CPI from premium net price/refunds/acquisition. Align cohort, horizon, currency and platform before comparing. Steam reviews and mobile IAP cannot form a revenue ranking.
+- Label scenario inputs `observed / estimate / assumption`, with sources and sensitivity. Scenarios are not forecasts or approvals.
 
-## 最小交付
+## Minimum useful handoff
 
-1. 负责人正在做的决定、已确定方向与范围。
-2. 类型×IP×地区×语言×付费模式的比较矩阵，缺口放在相应单元格。
-3. 两到三个能改变决定的发现；允许结论为“目前不能排名”，同时说明补什么证据会改变判断。
-4. 下一轮验证：假设、样本与口径、要观察的信号、成本/产能依赖、接收岗位、是否需要负责人决定。
+1. Decision, owner, confirmed direction and scope.
+2. Genre × IP × region × language × monetization comparison with gaps in the relevant cells.
+3. Two or three decision-changing findings. “Cannot rank yet” is valid when paired with the evidence that would change it.
+4. Next validation: hypothesis, sample/unit, signal, cost/capacity dependencies, recipient and required decision.
 
-可运行的公开研究见 [跨商业路线案例](../case-studies/cross-market-entry/README.md)。Merge 细分收入研究仍保留为一次下钻案例。
+See the [cross-route case](../case-studies/cross-market-entry/README.md). The original Merge revenue study remains a useful segment deep dive.
