@@ -1,40 +1,51 @@
-# 人类使用说明 · 游戏市场研究总监
+# 游戏市场研究总监 · 使用说明
 
 [English](HUMAN-GUIDE.en.md)
 
-## 这份岗位解决什么问题
+把一个立项问题，变成有来源的判断和下一轮验证。
 
-把“这个 Merge／社区游戏值不值得做、先做什么、对标谁、风险在哪里”转成有来源、有日期、有口径的研究结论。它是研究与决策支持岗位，不是自动购买数据，也不是替负责人拍板。
+## 准备资料
 
-## 30 秒开始
+给 Agent 项目方向、目标市场和你要做的决定。
+资料不齐也可以开始；影响下一步的缺项会单列，不以猜测填充。
 
-1. 给 Agent 项目简述、平台、地区、目标玩家和要支持的决定。
-2. 要求它先读 `SKILL.md`，再运行：
+## 我有一个方向，想知道先查什么
 
-   ```text
-   python scripts/intelligence.py sources --topic market --region china --platform mobile
-   python scripts/intelligence.py validate examples/merge-research.json
-   python scripts/intelligence.py report examples/merge-research.json --out outputs/merge-report
-   ```
+> 使用 `$game-market-intelligence`。我们沿用 Merge＋社区方向，目标是海外手游。先帮我整理研究问题，核对公开市场信号，告诉我机会、主要风险和下一步最值得验证的事。
 
-3. 先看决定摘要、风险和下一笔验证，再看比较表与底稿。
-4. 只有负责人确认的结论才能进入项目经理的执行基线。
+研究范围、带来源的判断、待补问题和验证建议。Agent 只补问影响当前结论的资料。
 
-## 你需要提供
+## 我拿到几份数据，想知道能不能放在一起比较
 
-平台与地区、研究对象、时间窗、竞品范围、预算或资源限制，以及“研究结果要支持哪个决定”。没有付费数据权限时，允许使用公开来源和用户导出，但报告必须标出缺口。
+> 这些是竞品数据和报告。帮我核对地区、平台、时间与指标定义，分清一方披露、第三方估算和未知，把真正可比的内容整理成表。
 
-## 你会收到
+可比较的证据表、原始出处、不能直接相加或对比的数字，以及补数方法。
 
-研究范围、来源目录、指标口径、带证据的观察、估算与事实分离的结论、风险、待验证项和给拆解/项目经理的交接问题。未知值保留为 `null`，不会为了填表虚构流水或成功率。
+## 准备开评审会，要把研究交给团队
 
-## 关键边界
+> 把这轮研究整理成决策简报。先说建议、风险和下一次验证，再附来源、口径和未知项；把需要负责人决定的内容单列。
 
-- Sensor Tower、AppMagic、七麦、点点等单款数据按第三方估算处理；财报只按披露的公司或分部口径使用。
-- SteamDB、Metacritic、广告素材量和评论不能直接当销量、利润或 ROAS。
-- 目录中的 77 个入口是可研究来源，不代表账号、API 或自动采集已经接通。
-- 不把竞品研究结论直接写成我方已批准玩法；需要负责人确认后再交给项目经理。
+人能阅读的报告与 Agent 能继续处理的底稿。负责人确认后，再交给拆解或项目管理岗位。
 
-## 推荐的人类复核
+## 如何复核
 
-核对业务日期、地区、平台、币种、样本覆盖、来源独立性与估算方法。任何影响立项的数字至少保留一个一手披露或明确的第三方方法说明。
+来源目录收录 77 个国内外研究入口，涵盖手游、PC／主机、行业报告、一方披露、买量和玩家观察。收录表示可研究的来源；账号、付费数据与 API 权限由使用环境提供。
+
+第三方流水保持估算标签，财报按原披露范围使用；未知值不补成数字。研究建议交给负责人决定。
+
+## 输出与交接
+
+- **研究判断：** 项目问题、机会、主要风险与下一次验证。
+- **证据底稿：** 来源、日期、平台、地区和指标定义都可追溯。
+- **可分享报告：** HTML、Markdown 和 JSON 来自同一份输入。
+
+市场研究给出证据与待验证问题；[拆解分析师](https://github.com/NewenergyEric/game-reverse-analyst)理解竞品结构；[项目经理](https://github.com/NewenergyEric/game-production-manager)把确认后的方向拆成执行工作；[Art Director](https://github.com/NewenergyEric/art-director-skill)建立专业美术规范。
+
+## 给 Agent 的技术入口
+
+Python 3.10+，核心工具仅用标准库。6 项确定性测试验证证据要求、未知保留、HTML 转义及来源路由。
+
+```sh
+python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
+python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
+```

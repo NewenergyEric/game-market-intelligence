@@ -1,67 +1,89 @@
-# 游戏市场研究总监
-
 [English](README.en.md)
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero-zh.png">
-  <img src="assets/readme/hero-zh.gif" alt="游戏市场研究总监：看清市场，决定下一次验证。" width="1280">
-</picture>
+# 游戏市场研究总监
 
-[▶ 观看 24 秒 MP4](assets/readme/hero-zh.mp4) · [English MP4](assets/readme/hero-en.mp4)
+### 看清市场，决定下一步。
 
-把 Merge／社区游戏的立项问题变成国内外市场证据、可比较的指标口径和下一步验证。这个岗位让主策、制作人和 Agent 读同一份研究底稿；它不会把来源目录伪装成已接通 API，也不会替负责人批准立项。
+**给制作人一个能继续行动的答案。**
 
-[30 秒开始](docs/HUMAN-GUIDE.md) · [Agent 调用说明](docs/AGENT-GUIDE.md) · [读取 Skill](SKILL.md) · [来源目录](references/source-catalog.md) · [真实案例](case-studies/merge-community-public-signals/README.md) · [Darwin 审查](evals/darwin-review.md)
+输入项目方向、目标市场和要做的决定。Agent 帮你选来源、对齐竞品口径、整理机会与风险，最后给出一轮具体的验证建议。已有研究可以接着补，资料不齐也能先写清已知与缺口。
 
-![Validate](https://github.com/NewenergyEric/game-market-intelligence/actions/workflows/validate.yml/badge.svg) ![MIT](https://img.shields.io/badge/license-MIT-151715.svg) ![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-225d4b.svg)
+<a href="assets/readme/hero-zh.mp4"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero-zh.png?v=workflow-v3">
+  <img src="assets/readme/hero-zh.gif?v=workflow-v3" width="100%" alt="把一个立项问题，变成有来源的判断和下一轮验证。">
+</picture></a>
 
-## 已完成的真实案例
+[24 秒，走完一次完整工作 · 播放 MP4](assets/readme/hero-zh.mp4) · [文字版](assets/readme/transcript-zh.md)
 
-[Merge＋社区公开信号研究](case-studies/merge-community-public-signals/README.md)用 Google Play、Metacore 一方披露和 AppMagic 驱动的行业估算，回答“市场是否存在、入口是否足够宽”这两个问题。它把事实、估算和未知分开，结论保持 `proposed`。
+## 装好，然后直接说
 
-[![Merge＋社区公开信号看板](case-studies/merge-community-public-signals/dashboard-zh.png)](case-studies/merge-community-public-signals/dashboard-zh.png)
+在支持 Agent Skills 的工具中安装，例如 Codex、Claude Code 或 Cursor：
 
-## 立即使用
+```sh
+npx skills add https://github.com/NewenergyEric/game-market-intelligence
+```
 
-```text
-git clone https://github.com/NewenergyEric/game-market-intelligence.git
-cd game-market-intelligence
-python scripts/intelligence.py sources --topic market --region china --platform mobile
+把资料放进 Agent 能读取的文件夹，再说出要解决的问题。文件整理和命令由 Agent 处理。
+
+### 我有一个方向，想知道先查什么
+
+> 使用 `$game-market-intelligence`。我们沿用 Merge＋社区方向，目标是海外手游。先帮我整理研究问题，核对公开市场信号，告诉我机会、主要风险和下一步最值得验证的事。
+
+**你会得到：** 研究范围、带来源的判断、待补问题和验证建议。Agent 只补问影响当前结论的资料。
+
+### 我拿到几份数据，想知道能不能放在一起比较
+
+> 这些是竞品数据和报告。帮我核对地区、平台、时间与指标定义，分清一方披露、第三方估算和未知，把真正可比的内容整理成表。
+
+**你会得到：** 可比较的证据表、原始出处、不能直接相加或对比的数字，以及补数方法。
+
+### 准备开评审会，要把研究交给团队
+
+> 把这轮研究整理成决策简报。先说建议、风险和下一次验证，再附来源、口径和未知项；把需要负责人决定的内容单列。
+
+**你会得到：** 人能阅读的报告与 Agent 能继续处理的底稿。负责人确认后，再交给拆解或项目管理岗位。
+
+## 最后交给团队什么
+
+- **研究判断：** 项目问题、机会、主要风险与下一次验证。
+- **证据底稿：** 来源、日期、平台、地区和指标定义都可追溯。
+- **可分享报告：** HTML、Markdown 和 JSON 来自同一份输入。
+
+## 看一份真实研究：Merge＋社区
+
+[公开信号案例](case-studies/merge-community-public-signals/README.md)从 Google Play、Metacore 披露与 AppMagic 支持的行业报告出发，得到一个具体判断：品类份额扩大，但头部收入集中，下一步应验证切入方式。
+
+2025 年的品类数字保留估算标签；商店快照和生命周期披露分开使用。我方 CPI、LTV、留存和产能仍是待补项。
+
+[![看一份真实研究：Merge＋社区](case-studies/merge-community-public-signals/dashboard-zh.png?v=workflow-v3)](case-studies/merge-community-public-signals/dashboard-zh.png)
+
+## 和其他岗位一起用
+
+市场研究给出证据与待验证问题；[拆解分析师](https://github.com/NewenergyEric/game-reverse-analyst)理解竞品结构；[项目经理](https://github.com/NewenergyEric/game-production-manager)把确认后的方向拆成执行工作；[Art Director](https://github.com/NewenergyEric/art-director-skill)建立专业美术规范。
+
+<details>
+<summary><strong>安装要求、技术文档与验证</strong></summary>
+
+Python 3.10+，核心工具仅用标准库。6 项确定性测试验证证据要求、未知保留、HTML 转义及来源路由。
+
+[人类详细说明](docs/HUMAN-GUIDE.md) · [Agent 调用说明](docs/AGENT-GUIDE.md) · [Skill 入口](SKILL.md) · [验证与审查](evals/)
+
+```sh
 python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
 python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
 ```
 
-把仓库交给能读取 GitHub 或本地文件的 Agent，要求它先读 `SKILL.md`，再提供你的项目资料。Python 3.10+，核心工具只使用标准库。
+[CI](https://github.com/NewenergyEric/game-market-intelligence/actions) · [Motion source](motion/README.md)
 
-## 输出
+</details>
 
-| 输入问题 | 输出 |
-|---|---|
-| 这个品类和地区值不值得研究 | 决定摘要、市场范围与关键风险 |
-| 哪些竞品可比 | 来源血缘、平台／地区／时间口径和比较表 |
-| 单款流水能否支持判断 | 分开的事实、估算、推断与未知 |
-| 下一步该补什么 | 验证清单、数据请求和岗位交接问题 |
+<details>
+<summary><strong>能力边界与资料使用</strong></summary>
 
-目录当前收录 77 个国内外研究入口，覆盖单款估算、PC／主机、行业报告、一方披露、买量、玩家观察、自有渠道和监管。**收录不代表已经购买账号、取得 API 权限或接通自动采集。**
+来源目录收录 77 个国内外研究入口，涵盖手游、PC／主机、行业报告、一方披露、买量和玩家观察。收录表示可研究的来源；账号、付费数据与 API 权限由使用环境提供。
 
-## 岗位协作
+第三方流水保持估算标签，财报按原披露范围使用；未知值不补成数字。研究建议交给负责人决定。
 
-| 岗位 | 交付 |
-|---|---|
-| 游戏市场研究总监 | 证据、经营判断、风险和验证建议 |
-| [游戏拆解与逆向分析师](https://github.com/NewenergyEric/game-reverse-analyst) | 玩法、架构、规则、资产结构和未知项 |
-| [游戏制作项目经理](https://github.com/NewenergyEric/game-production-manager) | SOW、工作包、任务、里程碑和验收 |
-| [美术总监](https://github.com/NewenergyEric/art-director-skill) | 视觉规范、资产家族、样板和团队规则包 |
+</details>
 
-市场研究给依据，拆解给结构，项目经理把已确认方向变成执行契约，Art Director 负责专业美术标准。实际产物由对应的人或 Agent 执行并返回证据。
-
-## 证据边界
-
-- Sensor Tower、AppMagic、七麦、点点等单款数字按第三方估算处理。
-- 财报和发行商披露按原口径使用，不能自行摊到单款、地区或渠道。
-- SteamDB 活跃曲线、评分、广告素材量和评论不能直接当销量、利润或 ROAS。
-- 未知值保留 `null` 和原因；市场建议保持 `proposed`，直到负责人明确确认。
-
-运行 `python -m unittest discover -s tests -v` 验证工具。测试、Darwin prompt 和反馈见 [`evals/`](evals/)；同类项目取舍见 [GitHub 参考扫描](references/github-reference-scan.md)。私人导出、账号配置和原始商业资料不随仓库发布。
-
-本仓库使用 MIT。
+[MIT License](LICENSE) · 由 Eric 与 Agents 一起制作。
