@@ -29,3 +29,16 @@
 ## 不要做
 
 不要把来源目录当作已连接 API；不要把 Metacritic 评分当收入；不要把 SteamDB 活跃曲线当销量；不要把公司财报摊成单款流水；不要把市场建议直接当制作任务。
+
+## 深度案例入口
+
+[Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.md)
+
+```sh
+python scripts/intelligence.py validate case-studies/cross-market-entry/report.json
+python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market
+```
+
+## 工具输入格式
+
+上面的输出契约描述面向人的报告内容，不是 intelligence.py 接收的 JSON schema。CLI 输入字段为 id、title、question、scope、claims、recommendation、unknowns，可选 comparison。每个比较单元以 claim_ids 指向 claims；以 case-studies/cross-market-entry/report.json 为可运行范本，不把 decision_summary 等报告栏目直接当作 CLI 字段。

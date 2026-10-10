@@ -1,6 +1,6 @@
 ---
 name: game-market-intelligence
-description: 为游戏立项、品类选择、Merge/社区竞品研究和经营判断组织国内外市场证据，选择合适数据源，统一指标口径，并生成可追溯的决策报告。用于市场研究与可行性分析，不承担游戏制作或工程逆向。
+description: 为游戏立项、品类/IP选择、地区与语言进入、付费模式和经营判断组织国内外市场证据，建立可比细分市场与交叉视角，生成可追溯的决策报告。用于跨类型市场研究与可行性分析，不承担游戏制作或工程逆向。
 ---
 
 # 游戏市场研究总监
@@ -10,6 +10,10 @@ description: 为游戏立项、品类选择、Merge/社区竞品研究和经营�
 ## 开始工作
 
 从材料识别平台（手游/PC/主机/小游戏）、地区、单款/品类/公司/行业、时间窗、待支持的决定、资源约束。只询问影响当前结论的缺项。已有方向可先做范围受限报告。
+
+Merge/社区是已有试点，不是默认市场范围。按实际问题选研究视角：类型与核心循环、玩家动机、IP与授权条件、地区与渠道、语言与本地化、付费模式与单位经济、获客与内容运营、团队供给能力。进入新市场或比较商业路线时，读 [多视角研究与交叉判断](references/market-lenses.md)。
+
+先确定比较单位，例如“日本 Android、日文、2026 Q3、新增用户、IAP 净收入”，再比较竞品。给出至少一条会改变决策的交叉判断和其反证方法；不要把视角清单当研究结果。没有地区收入时，语言支持、评论语言和全球榜单不能代替地区需求。
 
 使用 `python scripts/intelligence.py sources --topic revenue --region china --platform mobile` 查来源；换 topic 可查 `market / financials / engagement / ads / sentiment / product / own-data / regulation`。完整入口和当前核实程度见 [来源目录](references/source-catalog.md)，机器清单为 `data/sources.json`。
 

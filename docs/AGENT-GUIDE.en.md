@@ -27,3 +27,16 @@ Read `SKILL.md` first, then open `references/research-method.md`, `references/so
 At minimum include `decision_summary`, `evidence`, `risks`, `next_validation`, and `handoff_questions`. Every citation needs source, business date, collection time, region/platform, metric definition, and coverage gap.
 
 Do not present the catalog as connected APIs, ratings as revenue, Steam activity as sales, company financials as title-level revenue, or a market proposal as an approved production task.
+
+## Depth-case entry
+
+[Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.en.md)
+
+```sh
+python scripts/intelligence.py validate case-studies/cross-market-entry/report.json
+python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market
+```
+
+## Tool input schema
+
+The output contract above describes human-facing report content, not the JSON schema accepted by intelligence.py. CLI fields are id, title, question, scope, claims, recommendation and unknowns, with optional comparison. Each comparison cell references claims through claim_ids. Use case-studies/cross-market-entry/report.json as the executable example; do not substitute report section names such as decision_summary for CLI fields.

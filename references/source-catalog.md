@@ -1,6 +1,6 @@
 # 国内外游戏研究来源目录
 
-共 77 个研究入口／资料路径；包含品牌、官方披露门户、渠道及自有资料，并非 77 个独立数据集或已接通连接器。
+共 79 个研究入口／资料路径；包含品牌、官方披露门户、渠道及自有资料，并非 79 个独立数据集或已接通连接器。
 
 按研究问题选源；列表可用 CLI 按地区、平台和 topic 检索。`entry_checked` = 核读过官方入口；`limited` = 登录/JS/读取受限；`candidate` = 保留候选待核；`file_import` = 用户资料。商业账户与接口均需另做实际接入验证。
 
@@ -128,3 +128,10 @@
 Merge／社区研究优先：现有策划/试玩 → GameRefinery 的功能与 LiveOps → Sensor Tower/AppMagic/点点/七麦中已有权限的数据 → DataEye/广告库的创意线索 → 财报与行业报告交叉核对。平台未确定时不预设只有手游。
 
 先支持网页与用户导出；API/MCP 在字段、权限、额度和样例核验后逐一接通。主机/PC、大盘、评论、渠道后台按问题启用。未取得的数据保持 unknown，不自动补零。
+
+## 本轮多视角研究补充
+
+| 来源 | 可支持什么 | 不能证明什么 |
+|---|---|---|
+| [Steam 官方商店](https://store.steampowered.com/app/413150/Stardew_Valley/?cc=it&l=english) | 类型、界面语言、指定地区商店价格 | 地区销量或收入、评论人的国籍 |
+| [Scopely 官方合作披露](https://www.scopely.com/en/news/its-time-to-take-that-chance-monopoly-go-is-here) | MONOPOLY GO! 的 Hasbro 合作与产品定位 | 我方可获得的授权条款或授权带来的因果增益 |

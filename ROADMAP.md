@@ -1,6 +1,6 @@
 # 下一步与验收
 
-首版已有：岗位 Skill、77 个来源／资料入口、按问题检索、研究包结构检查、同源 HTML／Markdown 报告，以及一份可公开复核的 Merge＋社区真实案例。
+首版已有：岗位 Skill、79 个来源／资料入口、按问题检索、研究包结构检查、同源 HTML／Markdown 报告，以及一份可公开复核的 Merge＋社区真实案例。
 
 1. **已完成：** 用公开资料跑通 Merge／社区研究，保留来源、口径、估算边界和下一次验证。凭据见 [`case-studies/merge-community-public-signals/`](case-studies/merge-community-public-signals/)。
 2. 按现有账号先接一种平台导出或 API；字段、权限、缺失/限流和来源链有实际样例。完成凭据：真实导入与失败路径，不能只增加网址。

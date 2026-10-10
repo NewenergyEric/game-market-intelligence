@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "updated_on": "2026-10-10",
+  "updated_on": "2026-10-11",
   "sources": [
     {
       "id": "sensor-tower",
@@ -1996,6 +1996,56 @@
       "verification": "file_import",
       "checked_on": null,
       "access_modes": [
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "steam-store",
+      "name": "Steam 官方商店",
+      "url": "https://store.steampowered.com/app/413150/Stardew_Valley/?cc=it&l=english",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "product",
+        "market"
+      ],
+      "group": "官方产品与合作披露",
+      "limitations": "产品、语言、价格或合作披露不代表地区营收、净利润或授权报价。",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-11",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "scopely-official",
+      "name": "Scopely 官方产品与合作披露",
+      "url": "https://www.scopely.com/en/news/its-time-to-take-that-chance-monopoly-go-is-here",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "product",
+        "market"
+      ],
+      "group": "官方产品与合作披露",
+      "limitations": "产品、语言、价格或合作披露不代表地区营收、净利润或授权报价。",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-11",
+      "access_modes": [
+        "PUBLIC_WEB",
         "FILE_IMPORT"
       ],
       "connector_status": "not_connected",
