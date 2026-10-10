@@ -1,5 +1,7 @@
 # Agent 使用说明 · game-market-intelligence
 
+[English](AGENT-GUIDE.en.md)
+
 ## 入口与读取顺序
 
 先读 `SKILL.md`，再按问题读取 `references/research-method.md`、`references/source-catalog.md` 和 `data/sources.json`。只有需要渲染报告时才调用 `scripts/intelligence.py`。
