@@ -1,6 +1,6 @@
 # Merge + Community Public-Signals Brief
 
-[中文](README.md) · [Machine-readable baseline](report.json) · [Chinese dashboard](dashboard-zh.png)
+[中文](README.zh.md) · [Machine-readable baseline](report.json) · [Chinese dashboard](dashboard-zh.png)
 
 [![Merge + community public-signals dashboard](dashboard-en.png)](dashboard-en.png)
 

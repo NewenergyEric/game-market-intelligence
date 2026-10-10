@@ -1,8 +1,8 @@
 {
   "id": "cross-market-entry-20261011",
-  "title": "类型、IP、地区、语言与付费：三条商业路线的公开研究",
+  "title": "Genre, IP, region, language and monetization: three product routes",
   "title_en": "Genre, IP, region, language and monetization: three product routes",
-  "question": "沿用社区体验方向，如何比较手游 Merge、授权 IP 社交和 PC 买断，并确定下一轮地区/语言验证？",
+  "question": "How should a community-focused team compare Merge mobile, licensed-IP social and premium PC routes before a region/language test?",
   "question_en": "How should a community-focused team compare Merge mobile, licensed-IP social and premium PC routes before a region/language test?",
   "scope": {
     "platform": "mobile and PC; separate channel economics",
@@ -12,10 +12,10 @@
   "claims": [
     {
       "id": "GH-GENRE",
-      "statement": "Gossip Harbor / 类型 / 玩家循环",
+      "statement": "Gossip Harbor / genre",
       "statement_en": "Gossip Harbor / genre",
       "kind": "observed",
-      "value": "Merge＋剧情＋餐厅修复",
+      "value": "Merge, story and restaurant restoration",
       "value_en": "Merge, story and restaurant restoration",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -29,11 +29,13 @@
           "locator": "About this game",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Gossip Harbor / 类型 / 玩家循环",
+      "value_zh": "Merge＋剧情＋餐厅修复"
     },
     {
       "id": "GH-IP",
-      "statement": "Gossip Harbor / IP / 权利信息",
+      "statement": "Gossip Harbor / ip",
       "statement_en": "Gossip Harbor / ip",
       "kind": "observed",
       "value": null,
@@ -43,14 +45,16 @@
       "scope": "source-specific storefronts, no country revenue ranking",
       "source_ids": [],
       "evidence": [],
-      "unknown_reason": "权属与外部 IP 授权关系未在本轮核定"
+      "unknown_reason": "Ownership and any external IP licensing relationship were not established in this study.",
+      "statement_zh": "Gossip Harbor / IP / 权利信息",
+      "value_zh": null
     },
     {
       "id": "GH-REGION",
-      "statement": "Gossip Harbor / 地区 / 渠道口径",
+      "statement": "Gossip Harbor / region",
       "statement_en": "Gossip Harbor / region",
       "kind": "observed",
-      "value": "Google Play 英文页；不据此推断美国收入",
+      "value": "English Google Play listing; not US revenue",
       "value_en": "English Google Play listing; not US revenue",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -64,11 +68,13 @@
           "locator": "Store URL scope",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Gossip Harbor / 地区 / 渠道口径",
+      "value_zh": "Google Play 英文页；不据此推断美国收入"
     },
     {
       "id": "GH-LANGUAGE",
-      "statement": "Gossip Harbor / 语言 / 本地化",
+      "statement": "Gossip Harbor / language",
       "statement_en": "Gossip Harbor / language",
       "kind": "observed",
       "value": null,
@@ -78,14 +84,16 @@
       "scope": "source-specific storefronts, no country revenue ranking",
       "source_ids": [],
       "evidence": [],
-      "unknown_reason": "商店展示英文；游戏支持语言表待实机或官方资料核对"
+      "unknown_reason": "The store listing is in English; the complete in-game language table needs device or official verification.",
+      "statement_zh": "Gossip Harbor / 语言 / 本地化",
+      "value_zh": null
     },
     {
       "id": "GH-PAYMENT",
-      "statement": "Gossip Harbor / 付费方式",
+      "statement": "Gossip Harbor / payment",
       "statement_en": "Gossip Harbor / payment",
       "kind": "observed",
-      "value": "含广告与内购；比例未知",
+      "value": "Ads and IAP listed; revenue mix unknown",
       "value_en": "Ads and IAP listed; revenue mix unknown",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -99,14 +107,16 @@
           "locator": "Store labels",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Gossip Harbor / 付费方式",
+      "value_zh": "含广告与内购；比例未知"
     },
     {
       "id": "GH-PRODUCTION",
-      "statement": "Gossip Harbor / 内容 / 供给压力",
+      "statement": "Gossip Harbor / production",
       "statement_en": "Gossip Harbor / production",
       "kind": "observed",
-      "value": "公开更新说明出现每周新章节；当前产能与成本未知",
+      "value": "Captured update notes mention weekly chapters; capacity and cost unknown",
       "value_en": "Captured update notes mention weekly chapters; capacity and cost unknown",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -120,14 +130,16 @@
           "locator": "What is new; cached page dated June 2026",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Gossip Harbor / 内容 / 供给压力",
+      "value_zh": "公开更新说明出现每周新章节；当前产能与成本未知"
     },
     {
       "id": "MG-GENRE",
-      "statement": "MONOPOLY GO! / 类型 / 玩家循环",
+      "statement": "MONOPOLY GO! / genre",
       "statement_en": "MONOPOLY GO! / genre",
       "kind": "observed",
-      "value": "社交掷骰＋建造＋贴纸收集",
+      "value": "Social dice, building and sticker collection",
       "value_en": "Social dice, building and sticker collection",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -141,14 +153,16 @@
           "locator": "Official launch: features",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "MONOPOLY GO! / 类型 / 玩家循环",
+      "value_zh": "社交掷骰＋建造＋贴纸收集"
     },
     {
       "id": "MG-IP",
-      "statement": "MONOPOLY GO! / IP / 权利信息",
+      "statement": "MONOPOLY GO! / ip",
       "statement_en": "MONOPOLY GO! / ip",
       "kind": "observed",
-      "value": "官方确认 Scopely 与 Hasbro 合作",
+      "value": "Scopely and Hasbro collaboration disclosed",
       "value_en": "Scopely and Hasbro collaboration disclosed",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -162,14 +176,16 @@
           "locator": "Official launch: partners",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "MONOPOLY GO! / IP / 权利信息",
+      "value_zh": "官方确认 Scopely 与 Hasbro 合作"
     },
     {
       "id": "MG-REGION",
-      "statement": "MONOPOLY GO! / 地区 / 渠道口径",
+      "statement": "MONOPOLY GO! / region",
       "statement_en": "MONOPOLY GO! / region",
       "kind": "observed",
-      "value": "官方宣布全球 iOS/Android 发布；国家表现未披露",
+      "value": "Worldwide iOS/Android launch; country performance absent",
       "value_en": "Worldwide iOS/Android launch; country performance absent",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -183,11 +199,13 @@
           "locator": "Official launch: availability",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "MONOPOLY GO! / 地区 / 渠道口径",
+      "value_zh": "官方宣布全球 iOS/Android 发布；国家表现未披露"
     },
     {
       "id": "MG-LANGUAGE",
-      "statement": "MONOPOLY GO! / 语言 / 本地化",
+      "statement": "MONOPOLY GO! / language",
       "statement_en": "MONOPOLY GO! / language",
       "kind": "observed",
       "value": null,
@@ -197,14 +215,16 @@
       "scope": "source-specific storefronts, no country revenue ranking",
       "source_ids": [],
       "evidence": [],
-      "unknown_reason": "本轮没有核定完整的游戏内语言支持表"
+      "unknown_reason": "The complete in-game language table was not verified in this study.",
+      "statement_zh": "MONOPOLY GO! / 语言 / 本地化",
+      "value_zh": null
     },
     {
       "id": "MG-PAYMENT",
-      "statement": "MONOPOLY GO! / 付费方式",
+      "statement": "MONOPOLY GO! / payment",
       "statement_en": "MONOPOLY GO! / payment",
       "kind": "observed",
-      "value": "免费下载＋内购；付费漏斗未知",
+      "value": "Free download and IAP; payer funnel unknown",
       "value_en": "Free download and IAP; payer funnel unknown",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -223,14 +243,16 @@
           "url": "https://play.google.com/store/apps/details?gl=US&hl=en_US&id=com.scopely.monopolygo",
           "locator": "In-app purchases"
         }
-      ]
+      ],
+      "statement_zh": "MONOPOLY GO! / 付费方式",
+      "value_zh": "免费下载＋内购；付费漏斗未知"
     },
     {
       "id": "MG-PRODUCTION",
-      "statement": "MONOPOLY GO! / 内容 / 供给压力",
+      "statement": "MONOPOLY GO! / production",
       "statement_en": "MONOPOLY GO! / production",
       "kind": "observed",
-      "value": "官方列出活动与贴纸等持续内容；不能据此推算团队人数",
+      "value": "Events and stickers imply recurring content; no staffing estimate",
       "value_en": "Events and stickers imply recurring content; no staffing estimate",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -244,14 +266,16 @@
           "locator": "Official launch: events and stickers",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "MONOPOLY GO! / 内容 / 供给压力",
+      "value_zh": "官方列出活动与贴纸等持续内容；不能据此推算团队人数"
     },
     {
       "id": "SV-GENRE",
-      "statement": "Stardew Valley / 类型 / 玩家循环",
+      "statement": "Stardew Valley / genre",
       "statement_en": "Stardew Valley / genre",
       "kind": "observed",
-      "value": "乡村生活 RPG / 模拟；经营与关系",
+      "value": "Country-life RPG / simulation; farming and relationships",
       "value_en": "Country-life RPG / simulation; farming and relationships",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -265,14 +289,16 @@
           "locator": "About this game; official genre",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / 类型 / 玩家循环",
+      "value_zh": "乡村生活 RPG / 模拟；经营与关系"
     },
     {
       "id": "SV-IP",
-      "statement": "Stardew Valley / IP / 权利信息",
+      "statement": "Stardew Valley / ip",
       "statement_en": "Stardew Valley / ip",
       "kind": "observed",
-      "value": "商店列开发商与发行商 ConcernedApe；不等于我方授权",
+      "value": "ConcernedApe listed as developer/publisher; no license granted to us",
       "value_en": "ConcernedApe listed as developer/publisher; no license granted to us",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -286,14 +312,16 @@
           "locator": "Developer / publisher",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / IP / 权利信息",
+      "value_zh": "商店列开发商与发行商 ConcernedApe；不等于我方授权"
     },
     {
       "id": "SV-REGION",
-      "statement": "Stardew Valley / 地区 / 渠道口径",
+      "statement": "Stardew Valley / region",
       "statement_en": "Stardew Valley / region",
       "kind": "observed",
-      "value": "本轮 Steam 意大利区英文页面；不是全球统一定价",
+      "value": "Steam Italy storefront in English; not a worldwide price",
       "value_en": "Steam Italy storefront in English; not a worldwide price",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -307,14 +335,16 @@
           "locator": "cc=it, l=english",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / 地区 / 渠道口径",
+      "value_zh": "本轮 Steam 意大利区英文页面；不是全球统一定价"
     },
     {
       "id": "SV-LANGUAGE",
-      "statement": "Stardew Valley / 语言 / 本地化",
+      "statement": "Stardew Valley / language",
       "statement_en": "Stardew Valley / language",
       "kind": "observed",
-      "value": "12 种界面语言，含英/日/简中；非完整语音支持",
+      "value": "12 interface languages incl. English/Japanese/Simplified Chinese; not full voice",
       "value_en": "12 interface languages incl. English/Japanese/Simplified Chinese; not full voice",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -328,14 +358,16 @@
           "locator": "Language support table",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / 语言 / 本地化",
+      "value_zh": "12 种界面语言，含英/日/简中；非完整语音支持"
     },
     {
       "id": "SV-PAYMENT",
-      "statement": "Stardew Valley / 付费方式",
+      "statement": "Stardew Valley / payment",
       "statement_en": "Stardew Valley / payment",
       "kind": "observed",
-      "value": "买断本体 €13.99；意区页面快照，音轨另售",
+      "value": "€13.99 paid base game in Italy snapshot; soundtrack sold separately",
       "value_en": "€13.99 paid base game in Italy snapshot; soundtrack sold separately",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -349,14 +381,16 @@
           "locator": "Buy Stardew Valley; no discount marker in retrieved page",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / 付费方式",
+      "value_zh": "买断本体 €13.99；意区页面快照，音轨另售"
     },
     {
       "id": "SV-PRODUCTION",
-      "statement": "Stardew Valley / 内容 / 供给压力",
+      "statement": "Stardew Valley / production",
       "statement_en": "Stardew Valley / production",
       "kind": "observed",
-      "value": "内容与合作玩法由官方列明；我方内容成本需另算",
+      "value": "Content and co-op listed; our production cost needs its own estimate",
       "value_en": "Content and co-op listed; our production cost needs its own estimate",
       "unit": "qualitative observation",
       "period": "retrieved 2026-10-11; source snapshot, not a live performance feed",
@@ -370,51 +404,60 @@
           "locator": "About this game",
           "note": "Publisher/store observation; not measured player or business performance."
         }
-      ]
+      ],
+      "statement_zh": "Stardew Valley / 内容 / 供给压力",
+      "value_zh": "内容与合作玩法由官方列明；我方内容成本需另算"
     }
   ],
   "recommendation": {
     "status": "proposed",
-    "text": "保持现有项目方向。先分别验证内容产能、IP 商务可行性与目标语言/地区漏斗；不把三款游戏排成跨平台收入榜。",
-    "text_en": "Preserve the current project direction. Test content capacity, IP feasibility and local funnels separately; do not create a cross-platform revenue ranking."
+    "text": "Preserve the current project direction. Test content capacity, IP feasibility and local funnels separately; do not create a cross-platform revenue ranking.",
+    "text_en": "Preserve the current project direction. Test content capacity, IP feasibility and local funnels separately; do not create a cross-platform revenue ranking.",
+    "text_zh": "保持现有项目方向。先分别验证内容产能、IP 商务可行性与目标语言/地区漏斗；不把三款游戏排成跨平台收入榜。"
   },
   "unknowns": [
-    "我方目标国家与队列 CPI/LTV",
-    "IP 授权范围、保底、分成和审批周期",
-    "本地化、客服、活动与内容产能",
-    "同地区、同时间、同收入定义的可比数据"
+    "CPI/LTV for our target countries and cohorts",
+    "IP territory, guarantees, royalties and approval lead times",
+    "Localization, support, events and content capacity",
+    "Comparable data with aligned region, period and revenue definition"
   ],
   "comparison": {
     "axes": [
       {
         "id": "genre",
-        "label": "类型 / 玩家循环",
-        "label_en": "Genre / loop"
+        "label": "Genre / loop",
+        "label_en": "Genre / loop",
+        "label_zh": "类型 / 玩家循环"
       },
       {
         "id": "ip",
-        "label": "IP / 权利信息",
-        "label_en": "IP / rights evidence"
+        "label": "IP / rights evidence",
+        "label_en": "IP / rights evidence",
+        "label_zh": "IP / 权利信息"
       },
       {
         "id": "region",
-        "label": "地区 / 渠道口径",
-        "label_en": "Region / channel scope"
+        "label": "Region / channel scope",
+        "label_en": "Region / channel scope",
+        "label_zh": "地区 / 渠道口径"
       },
       {
         "id": "language",
-        "label": "语言 / 本地化",
-        "label_en": "Language / localization"
+        "label": "Language / localization",
+        "label_en": "Language / localization",
+        "label_zh": "语言 / 本地化"
       },
       {
         "id": "payment",
-        "label": "付费方式",
-        "label_en": "Monetization"
+        "label": "Monetization",
+        "label_en": "Monetization",
+        "label_zh": "付费方式"
       },
       {
         "id": "production",
-        "label": "内容 / 供给压力",
-        "label_en": "Content / supply implications"
+        "label": "Content / supply implications",
+        "label_en": "Content / supply implications",
+        "label_zh": "内容 / 供给压力"
       }
     ],
     "products": [
@@ -423,46 +466,52 @@
         "name": "Gossip Harbor",
         "cells": {
           "genre": {
-            "text": "Merge＋剧情＋餐厅修复",
+            "text": "Merge, story and restaurant restoration",
             "text_en": "Merge, story and restaurant restoration",
             "claim_ids": [
               "GH-GENRE"
-            ]
+            ],
+            "text_zh": "Merge＋剧情＋餐厅修复"
           },
           "ip": {
-            "text": "权属与外部 IP 授权关系未在本轮核定",
+            "text": "Rights and external IP terms not established",
             "text_en": "Rights and external IP terms not established",
             "claim_ids": [
               "GH-IP"
-            ]
+            ],
+            "text_zh": "Ownership and any external IP licensing relationship were not established in this study."
           },
           "region": {
-            "text": "Google Play 英文页；不据此推断美国收入",
+            "text": "English Google Play listing; not US revenue",
             "text_en": "English Google Play listing; not US revenue",
             "claim_ids": [
               "GH-REGION"
-            ]
+            ],
+            "text_zh": "Google Play 英文页；不据此推断美国收入"
           },
           "language": {
-            "text": "商店展示英文；游戏支持语言表待实机或官方资料核对",
+            "text": "English listing; in-game language support unverified",
             "text_en": "English listing; in-game language support unverified",
             "claim_ids": [
               "GH-LANGUAGE"
-            ]
+            ],
+            "text_zh": "The store listing is in English; the complete in-game language table needs device or official verification."
           },
           "payment": {
-            "text": "含广告与内购；比例未知",
+            "text": "Ads and IAP listed; revenue mix unknown",
             "text_en": "Ads and IAP listed; revenue mix unknown",
             "claim_ids": [
               "GH-PAYMENT"
-            ]
+            ],
+            "text_zh": "含广告与内购；比例未知"
           },
           "production": {
-            "text": "公开更新说明出现每周新章节；当前产能与成本未知",
+            "text": "Captured update notes mention weekly chapters; capacity and cost unknown",
             "text_en": "Captured update notes mention weekly chapters; capacity and cost unknown",
             "claim_ids": [
               "GH-PRODUCTION"
-            ]
+            ],
+            "text_zh": "公开更新说明出现每周新章节；当前产能与成本未知"
           }
         }
       },
@@ -471,46 +520,52 @@
         "name": "MONOPOLY GO!",
         "cells": {
           "genre": {
-            "text": "社交掷骰＋建造＋贴纸收集",
+            "text": "Social dice, building and sticker collection",
             "text_en": "Social dice, building and sticker collection",
             "claim_ids": [
               "MG-GENRE"
-            ]
+            ],
+            "text_zh": "社交掷骰＋建造＋贴纸收集"
           },
           "ip": {
-            "text": "官方确认 Scopely 与 Hasbro 合作",
+            "text": "Scopely and Hasbro collaboration disclosed",
             "text_en": "Scopely and Hasbro collaboration disclosed",
             "claim_ids": [
               "MG-IP"
-            ]
+            ],
+            "text_zh": "官方确认 Scopely 与 Hasbro 合作"
           },
           "region": {
-            "text": "官方宣布全球 iOS/Android 发布；国家表现未披露",
+            "text": "Worldwide iOS/Android launch; country performance absent",
             "text_en": "Worldwide iOS/Android launch; country performance absent",
             "claim_ids": [
               "MG-REGION"
-            ]
+            ],
+            "text_zh": "官方宣布全球 iOS/Android 发布；国家表现未披露"
           },
           "language": {
-            "text": "本轮没有核定完整的游戏内语言支持表",
+            "text": "Full in-game language coverage unverified",
             "text_en": "Full in-game language coverage unverified",
             "claim_ids": [
               "MG-LANGUAGE"
-            ]
+            ],
+            "text_zh": "The complete in-game language table was not verified in this study."
           },
           "payment": {
-            "text": "免费下载＋内购；付费漏斗未知",
+            "text": "Free download and IAP; payer funnel unknown",
             "text_en": "Free download and IAP; payer funnel unknown",
             "claim_ids": [
               "MG-PAYMENT"
-            ]
+            ],
+            "text_zh": "免费下载＋内购；付费漏斗未知"
           },
           "production": {
-            "text": "官方列出活动与贴纸等持续内容；不能据此推算团队人数",
+            "text": "Events and stickers imply recurring content; no staffing estimate",
             "text_en": "Events and stickers imply recurring content; no staffing estimate",
             "claim_ids": [
               "MG-PRODUCTION"
-            ]
+            ],
+            "text_zh": "官方列出活动与贴纸等持续内容；不能据此推算团队人数"
           }
         }
       },
@@ -519,49 +574,57 @@
         "name": "Stardew Valley",
         "cells": {
           "genre": {
-            "text": "乡村生活 RPG / 模拟；经营与关系",
+            "text": "Country-life RPG / simulation; farming and relationships",
             "text_en": "Country-life RPG / simulation; farming and relationships",
             "claim_ids": [
               "SV-GENRE"
-            ]
+            ],
+            "text_zh": "乡村生活 RPG / 模拟；经营与关系"
           },
           "ip": {
-            "text": "商店列开发商与发行商 ConcernedApe；不等于我方授权",
+            "text": "ConcernedApe listed as developer/publisher; no license granted to us",
             "text_en": "ConcernedApe listed as developer/publisher; no license granted to us",
             "claim_ids": [
               "SV-IP"
-            ]
+            ],
+            "text_zh": "商店列开发商与发行商 ConcernedApe；不等于我方授权"
           },
           "region": {
-            "text": "本轮 Steam 意大利区英文页面；不是全球统一定价",
+            "text": "Steam Italy storefront in English; not a worldwide price",
             "text_en": "Steam Italy storefront in English; not a worldwide price",
             "claim_ids": [
               "SV-REGION"
-            ]
+            ],
+            "text_zh": "本轮 Steam 意大利区英文页面；不是全球统一定价"
           },
           "language": {
-            "text": "12 种界面语言，含英/日/简中；非完整语音支持",
+            "text": "12 interface languages incl. English/Japanese/Simplified Chinese; not full voice",
             "text_en": "12 interface languages incl. English/Japanese/Simplified Chinese; not full voice",
             "claim_ids": [
               "SV-LANGUAGE"
-            ]
+            ],
+            "text_zh": "12 种界面语言，含英/日/简中；非完整语音支持"
           },
           "payment": {
-            "text": "买断本体 €13.99；意区页面快照，音轨另售",
+            "text": "€13.99 paid base game in Italy snapshot; soundtrack sold separately",
             "text_en": "€13.99 paid base game in Italy snapshot; soundtrack sold separately",
             "claim_ids": [
               "SV-PAYMENT"
-            ]
+            ],
+            "text_zh": "买断本体 €13.99；意区页面快照，音轨另售"
           },
           "production": {
-            "text": "内容与合作玩法由官方列明；我方内容成本需另算",
+            "text": "Content and co-op listed; our production cost needs its own estimate",
             "text_en": "Content and co-op listed; our production cost needs its own estimate",
             "claim_ids": [
               "SV-PRODUCTION"
-            ]
+            ],
+            "text_zh": "内容与合作玩法由官方列明；我方内容成本需另算"
           }
         }
       }
     ]
-  }
+  },
+  "title_zh": "类型、IP、地区、语言与付费：三条商业路线的公开研究",
+  "question_zh": "沿用社区体验方向，如何比较手游 Merge、授权 IP 社交和 PC 买断，并确定下一轮地区/语言验证？"
 }

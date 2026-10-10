@@ -1,19 +1,19 @@
 ﻿product_id,product,axis,value,value_en,claim_ids
-gh,Gossip Harbor,genre,Merge＋剧情＋餐厅修复,"Merge, story and restaurant restoration",GH-GENRE
-gh,Gossip Harbor,ip,权属与外部 IP 授权关系未在本轮核定,Rights and external IP terms not established,GH-IP
-gh,Gossip Harbor,region,Google Play 英文页；不据此推断美国收入,English Google Play listing; not US revenue,GH-REGION
-gh,Gossip Harbor,language,商店展示英文；游戏支持语言表待实机或官方资料核对,English listing; in-game language support unverified,GH-LANGUAGE
-gh,Gossip Harbor,payment,含广告与内购；比例未知,Ads and IAP listed; revenue mix unknown,GH-PAYMENT
-gh,Gossip Harbor,production,公开更新说明出现每周新章节；当前产能与成本未知,Captured update notes mention weekly chapters; capacity and cost unknown,GH-PRODUCTION
-mg,MONOPOLY GO!,genre,社交掷骰＋建造＋贴纸收集,"Social dice, building and sticker collection",MG-GENRE
-mg,MONOPOLY GO!,ip,官方确认 Scopely 与 Hasbro 合作,Scopely and Hasbro collaboration disclosed,MG-IP
-mg,MONOPOLY GO!,region,官方宣布全球 iOS/Android 发布；国家表现未披露,Worldwide iOS/Android launch; country performance absent,MG-REGION
-mg,MONOPOLY GO!,language,本轮没有核定完整的游戏内语言支持表,Full in-game language coverage unverified,MG-LANGUAGE
-mg,MONOPOLY GO!,payment,免费下载＋内购；付费漏斗未知,Free download and IAP; payer funnel unknown,MG-PAYMENT
-mg,MONOPOLY GO!,production,官方列出活动与贴纸等持续内容；不能据此推算团队人数,Events and stickers imply recurring content; no staffing estimate,MG-PRODUCTION
-sv,Stardew Valley,genre,乡村生活 RPG / 模拟；经营与关系,Country-life RPG / simulation; farming and relationships,SV-GENRE
-sv,Stardew Valley,ip,商店列开发商与发行商 ConcernedApe；不等于我方授权,ConcernedApe listed as developer/publisher; no license granted to us,SV-IP
-sv,Stardew Valley,region,本轮 Steam 意大利区英文页面；不是全球统一定价,Steam Italy storefront in English; not a worldwide price,SV-REGION
-sv,Stardew Valley,language,12 种界面语言，含英/日/简中；非完整语音支持,12 interface languages incl. English/Japanese/Simplified Chinese; not full voice,SV-LANGUAGE
-sv,Stardew Valley,payment,买断本体 €13.99；意区页面快照，音轨另售,€13.99 paid base game in Italy snapshot; soundtrack sold separately,SV-PAYMENT
-sv,Stardew Valley,production,内容与合作玩法由官方列明；我方内容成本需另算,Content and co-op listed; our production cost needs its own estimate,SV-PRODUCTION
+gh,Gossip Harbor,genre,"Merge, story and restaurant restoration","Merge, story and restaurant restoration",GH-GENRE
+gh,Gossip Harbor,ip,Rights and external IP terms not established,Rights and external IP terms not established,GH-IP
+gh,Gossip Harbor,region,English Google Play listing; not US revenue,English Google Play listing; not US revenue,GH-REGION
+gh,Gossip Harbor,language,English listing; in-game language support unverified,English listing; in-game language support unverified,GH-LANGUAGE
+gh,Gossip Harbor,payment,Ads and IAP listed; revenue mix unknown,Ads and IAP listed; revenue mix unknown,GH-PAYMENT
+gh,Gossip Harbor,production,Captured update notes mention weekly chapters; capacity and cost unknown,Captured update notes mention weekly chapters; capacity and cost unknown,GH-PRODUCTION
+mg,MONOPOLY GO!,genre,"Social dice, building and sticker collection","Social dice, building and sticker collection",MG-GENRE
+mg,MONOPOLY GO!,ip,Scopely and Hasbro collaboration disclosed,Scopely and Hasbro collaboration disclosed,MG-IP
+mg,MONOPOLY GO!,region,Worldwide iOS/Android launch; country performance absent,Worldwide iOS/Android launch; country performance absent,MG-REGION
+mg,MONOPOLY GO!,language,Full in-game language coverage unverified,Full in-game language coverage unverified,MG-LANGUAGE
+mg,MONOPOLY GO!,payment,Free download and IAP; payer funnel unknown,Free download and IAP; payer funnel unknown,MG-PAYMENT
+mg,MONOPOLY GO!,production,Events and stickers imply recurring content; no staffing estimate,Events and stickers imply recurring content; no staffing estimate,MG-PRODUCTION
+sv,Stardew Valley,genre,Country-life RPG / simulation; farming and relationships,Country-life RPG / simulation; farming and relationships,SV-GENRE
+sv,Stardew Valley,ip,ConcernedApe listed as developer/publisher; no license granted to us,ConcernedApe listed as developer/publisher; no license granted to us,SV-IP
+sv,Stardew Valley,region,Steam Italy storefront in English; not a worldwide price,Steam Italy storefront in English; not a worldwide price,SV-REGION
+sv,Stardew Valley,language,12 interface languages incl. English/Japanese/Simplified Chinese; not full voice,12 interface languages incl. English/Japanese/Simplified Chinese; not full voice,SV-LANGUAGE
+sv,Stardew Valley,payment,€13.99 paid base game in Italy snapshot; soundtrack sold separately,€13.99 paid base game in Italy snapshot; soundtrack sold separately,SV-PAYMENT
+sv,Stardew Valley,production,Content and co-op listed; our production cost needs its own estimate,Content and co-op listed; our production cost needs its own estimate,SV-PRODUCTION

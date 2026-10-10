@@ -1,4 +1,4 @@
-[中文](README.md)
+[中文](README.zh.md)
 
 # Game Market Intelligence Director
 
@@ -43,11 +43,11 @@ Separate product capability from commercial performance; assign CPI/LTV, IP term
 
 **Real public-source research: Gossip Harbor, MONOPOLY GO! and Stardew Valley.** Three products × six lenses, with 18 evidence-linked cells covering genre, IP, region, language, payment and capacity. The original Merge industry case remains available.
 
-[Full analysis and downloadable records](case-studies/cross-market-entry/README.en.md)
+[Full analysis and downloadable records](case-studies/cross-market-entry/README.md)
 
 [![Game Market Intelligence Director](case-studies/cross-market-entry/dashboard-en.png?v=depth-v4)](case-studies/cross-market-entry/dashboard-en.png)
 
-[Explore the existing Merge revenue, growth and concentration case](case-studies/merge-community-public-signals/README.en.md)
+[Explore the existing Merge revenue, growth and concentration case](case-studies/merge-community-public-signals/README.md)
 
 ## What the team receives
 
@@ -62,7 +62,7 @@ Separate product capability from commercial performance; assign CPI/LTV, IP term
 
 Core helpers use Python 3.10+ and the standard library. Remotion is optional presentation tooling.
 
-[Human guide](docs/HUMAN-GUIDE.en.md) · [Agent guide](docs/AGENT-GUIDE.en.md) · [SKILL.md](SKILL.md) · [Tests and review](evals/) · [Motion source](motion/README.md)
+[Human guide](docs/HUMAN-GUIDE.md) · [Agent guide](docs/AGENT-GUIDE.md) · [SKILL.md](SKILL.md) · [Tests and review](evals/) · [Motion source](motion/README.md)
 
 ```sh
 python -m unittest discover -s tests -v
@@ -72,3 +72,11 @@ python scripts/check_presentation.py
 </details>
 
 [MIT License](LICENSE) · Made by Eric and Agents.
+
+## Four roles. One game worth making.
+
+For a solo creator these are four hats; for a team they are connected responsibilities. Explore what is worth making, what competitors do, the resources it requires, and the original art that defines it.
+
+[How the roles exchange evidence, scope and visual assets](docs/WORKFLOW.md) · [Art Director](https://github.com/NewenergyEric/art-director-skill)
+
+![Market intelligence → competitor analysis → production assessment → original art direction; prototype and cost feedback revise earlier decisions.](assets/readme/workflow-en.png)
