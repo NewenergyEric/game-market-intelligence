@@ -7,6 +7,8 @@
   <img src="assets/readme/hero-en.gif" alt="Game Market Intelligence Director: read the market and call the next test." width="1280">
 </picture>
 
+[▶ Watch the 24-second MP4](assets/readme/hero-en.mp4) · [中文 MP4](assets/readme/hero-zh.mp4)
+
 Turn a Merge/community game thesis into global market evidence, comparable definitions, and the next validation. This role gives game directors, producers, and agents one research baseline. It does not present a source catalog as connected APIs or approve a project on a lead's behalf.
 
 [30-second start](docs/HUMAN-GUIDE.en.md) · [Agent guide](docs/AGENT-GUIDE.en.md) · [Read the canonical skill](SKILL.md) · [Source catalog](references/source-catalog.md) · [Real case](case-studies/merge-community-public-signals/README.en.md) · [Darwin review](evals/darwin-review.md)

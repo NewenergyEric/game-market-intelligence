@@ -7,6 +7,8 @@
   <img src="assets/readme/hero-zh.gif" alt="游戏市场研究总监：看清市场，决定下一次验证。" width="1280">
 </picture>
 
+[▶ 观看 24 秒 MP4](assets/readme/hero-zh.mp4) · [English MP4](assets/readme/hero-en.mp4)
+
 把 Merge／社区游戏的立项问题变成国内外市场证据、可比较的指标口径和下一步验证。这个岗位让主策、制作人和 Agent 读同一份研究底稿；它不会把来源目录伪装成已接通 API，也不会替负责人批准立项。
 
 [30 秒开始](docs/HUMAN-GUIDE.md) · [Agent 调用说明](docs/AGENT-GUIDE.md) · [读取 Skill](SKILL.md) · [来源目录](references/source-catalog.md) · [真实案例](case-studies/merge-community-public-signals/README.md) · [Darwin 审查](evals/darwin-review.md)
