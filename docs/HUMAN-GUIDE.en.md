@@ -1,33 +1,51 @@
-# Human Guide · Game Market Intelligence Director
+# Game Market Intelligence Director · Human guide
 
 [中文](HUMAN-GUIDE.md)
 
-## What this role solves
+Turn a greenlight question into sourced findings and a practical next test.
 
-It turns “Is this Merge/community game worth pursuing, what should we test first, who should we compare, and where is the risk?” into dated, scoped, sourced research. It supports decisions; it does not buy data automatically or approve a project for the accountable lead.
+## Bring your materials
 
-## 30-second start
+Give your agent the idea, target market and decision you need to make.
+Incomplete material is fine to start; missing inputs that affect the next step stay visible.
 
-1. Give the agent the project brief, platform, region, target audience, and decision to support.
-2. Ask it to read `SKILL.md`, then run:
+## I have a direction. What should we research?
 
-   ```text
-   python scripts/intelligence.py sources --topic market --region china --platform mobile
-   python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
-   python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
-   ```
+> Use `$game-market-intelligence`. We are exploring Merge + community for overseas mobile markets. Frame the research, check public signals, and show the opportunity, key risks and what to test next.
 
-3. Read the decision summary, risks, and next validation before the comparison tables.
-4. Only a lead-confirmed decision may enter the production manager's execution baseline.
+A research scope, sourced findings, missing inputs and a proposed validation plan. The agent asks only for information that affects the current call.
 
-## What you provide
+## I have several reports. Are the numbers comparable?
 
-Platform and region, research target, time window, competitor scope, budget or resource constraints, and the decision the research must support. Public sources and user exports are acceptable when paid access is unavailable, but the report must state the gap.
+> Check these competitor reports for region, platform, period and metric definitions. Separate publisher disclosures, third-party estimates and unknowns. Build a table of what we can actually compare.
 
-## What you receive
+A comparable evidence table, original sources, numbers that cannot be added or compared directly, and a plan for filling gaps.
 
-Research scope, source routing, metric definitions, evidenced observations, separated facts and estimates, risks, unknowns, and handoff questions. Missing values remain `null`; the role does not invent revenue or success probabilities.
+## We need a review brief for the team
 
-## Review before use
+> Turn this research into a decision brief. Lead with the recommendation, risks and next test; attach sources, definitions and unknowns. List the decisions that need an owner.
 
-Check business date, region, platform, currency, sample coverage, source independence, and estimation method. Any number that can change the project decision should retain either first-party disclosure or a clear third-party method statement.
+A readable report and a structured record another agent can continue. After the owner decides, hand the direction to analysis or production planning.
+
+## How to review
+
+The catalog contains 77 domestic and international research sources across mobile, PC/console, industry reports, company disclosures, advertising and player observations. A catalog entry is a research route; accounts, paid data and API access come from the working environment.
+
+Third-party revenue stays estimated, financial disclosures keep their stated scope, and missing values remain unknown. The owner makes the final decision.
+
+## Outputs and handoff
+
+- **Research call:** the project question, opportunity, risks and next validation.
+- **Evidence record:** traceable sources, dates, regions, platforms and definitions.
+- **Shareable report:** HTML, Markdown and JSON generated from one input.
+
+Research supplies evidence and open questions. The [Reverse Analyst](https://github.com/NewenergyEric/game-reverse-analyst) explains competitor structure. The [Production Manager](https://github.com/NewenergyEric/game-production-manager) turns confirmed direction into tasks. [Art Director](https://github.com/NewenergyEric/art-director-skill) builds the professional visual rules.
+
+## Technical entry for your agent
+
+Python 3.10+; the core uses the standard library. Six deterministic tests cover evidence requirements, unknowns, HTML escaping and source routing.
+
+```sh
+python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
+python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
+```

@@ -1,13 +1,120 @@
 {
-  "system": "shared role showcase v1",
-  "languages": ["zh-CN", "en"],
-  "assets": {
-    "hero-zh.gif": {"dimensions": "1280x720", "frames": 30, "duration_seconds": 6},
-    "hero-en.gif": {"dimensions": "1280x720", "frames": 30, "duration_seconds": 6},
-    "hero-zh.png": {"dimensions": "1280x720", "purpose": "reduced-motion fallback"},
-    "hero-en.png": {"dimensions": "1280x720", "purpose": "reduced-motion fallback"}
+  "system": "Art Director-aligned role film v3",
+  "languages": [
+    "zh-CN",
+    "en"
+  ],
+  "motion": {
+    "duration_seconds": 24,
+    "source_fps": 30,
+    "gif_fps": 20,
+    "chapter_frames": [
+      0,
+      120,
+      252,
+      384,
+      510,
+      630,
+      720
+    ],
+    "reviewed_frames": [
+      70,
+      218,
+      360,
+      480,
+      600,
+      680
+    ]
   },
-  "tokens": {"navy": "#001f3f", "teal": "#007d86", "mint": "#92e4da", "accent": "#ffd361"},
-  "provenance": "Original composition informed by the Art Director visual system and the user-provided depth-showcase-en.mp4. No frames from the reference video are redistributed.",
-  "content_rule": "Chinese and English assets use one evidence baseline and separate language composition."
+  "assets": {
+    "assets/readme/hero-zh.mp4": {
+      "bytes": 2071443,
+      "sha256": "a4ecd8ae6a2d7fcd347e11007b740a55788c6706b57dfdf2aee74c6ba935e7ed",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "duration_seconds": 24,
+      "fps": 30,
+      "frames": 720
+    },
+    "assets/readme/hero-zh.gif": {
+      "bytes": 5341731,
+      "sha256": "0e01db4d1f72e689782676cc4c3eaeeb90cdeb5c1f8d788b9aca762a38cfa7f8",
+      "dimensions": [
+        800,
+        450
+      ],
+      "duration_seconds": 24,
+      "fps": 20,
+      "frames": 480,
+      "palette_colors": 64
+    },
+    "assets/readme/hero-zh.png": {
+      "bytes": 546425,
+      "sha256": "9c483cfc386b3c0e5d81758ab0335a0da31d3217ac11cf54eb6f19bbff1d1f93",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    "case-studies/merge-community-public-signals/dashboard-zh.png": {
+      "bytes": 222896,
+      "sha256": "f6d1d13d0a30af48b65333c62f0a89154de7194aaacce04bcda2cf3958b44cbf",
+      "dimensions": [
+        1600,
+        1040
+      ]
+    },
+    "assets/readme/hero-en.mp4": {
+      "bytes": 2271746,
+      "sha256": "be827897957956e0a12ed69d9eab33f297b3901055387826837d81e85b310bd0",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "duration_seconds": 24,
+      "fps": 30,
+      "frames": 720
+    },
+    "assets/readme/hero-en.gif": {
+      "bytes": 5749921,
+      "sha256": "f7bd2ee84851c996af47d9f7d85c72df278027524ee0fe3f4bf4505860577483",
+      "dimensions": [
+        800,
+        450
+      ],
+      "duration_seconds": 24,
+      "fps": 20,
+      "frames": 480,
+      "palette_colors": 64
+    },
+    "assets/readme/hero-en.png": {
+      "bytes": 552653,
+      "sha256": "22a2a3ea8997bd05fd5a1e36b23479abc76f34d02e466c7b4279d8cb56d51056",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    "case-studies/merge-community-public-signals/dashboard-en.png": {
+      "bytes": 217534,
+      "sha256": "16cde04123794b6bfcd2fc6f97408ffe987564ae3e1dbc82c6847bb553d1ebe8",
+      "dimensions": [
+        1600,
+        1040
+      ]
+    }
+  },
+  "tokens": {
+    "navy": "#001f3f",
+    "teal": "#007d86",
+    "mint": "#92e4da",
+    "paper": "#f5f9fb",
+    "muted": "#b2cbd7"
+  },
+  "reference": "https://github.com/NewenergyEric/art-director-skill",
+  "provenance": "Original role-specific Remotion composition. Font: Noto Sans SC variable subset, SIL OFL. No proprietary fonts or target-game art copied.",
+  "content_rule": "Human prompts, concrete steps and actual tool outputs. Both languages share the same case baseline. Complete boards are rendered independently from animation.",
+  "case_baseline": "case-studies/merge-community-public-signals/report.json"
 }
