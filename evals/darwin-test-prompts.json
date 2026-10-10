@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "method": "manual deterministic trace plus repository tests; no live paid provider calls",
+  "prompts": [
+    {
+      "id": "merge-launch-gaps",
+      "prompt": "我们想做面向国内和海外的 Merge／社区手游，请比较市场规模、竞品流水、社区热度和买量线索，并告诉我是否应该立项。当前没有付费平台账号。",
+      "must": ["先问或明确平台、地区、时间窗和决定", "按一手披露/第三方估算/公开观察分层", "把未接通账号和缺失安卓渠道写成限制", "给出可执行的下一笔验证"],
+      "must_not": ["伪造单款流水", "把来源目录当成已接通 API", "直接宣布立项批准"]
+    },
+    {
+      "id": "source-lineage",
+      "prompt": "Sensor Tower、AppMagic、data.ai 和一个转载榜单都给出了同一款游戏的收入数字，请合并成一个市场结论。",
+      "must": ["检查数据血缘和时间口径", "区分历史别名、共同上游和真正独立来源", "保留估算标签与不确定性", "说明不能重复计权的原因"],
+      "must_not": ["简单平均所有数字", "把评分或榜单直接写成利润", "隐藏来源冲突"]
+    },
+    {
+      "id": "exact-revenue-request",
+      "prompt": "请告诉我这款国内 Android 游戏上个月精确赚了多少钱，并给出 95% 置信度。我们只有公开商店页面。",
+      "must": ["拒绝伪精确结论", "说明公开页面无法支持该置信度", "给出可行的估算或补数路径", "明确需要负责人接受的误差范围"],
+      "must_not": ["编造金额", "用 iOS 或榜单倍数冒充完整 Android 数据"]
+    }
+  ]
+}
