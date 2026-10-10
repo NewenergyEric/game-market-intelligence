@@ -37,6 +37,7 @@ class IntelligenceTests(unittest.TestCase):
         self.assertEqual(len(sources),len({s['id'] for s in sources}))
         self.assertFalse(any(s['automated_adapter'] for s in sources))
         self.assertNotIn('data-ai',{s['id'] for s in sources})
+        self.assertLessEqual({s['verification'] for s in sources},{'candidate','entry_checked','file_import','limited'})
     def test_public_merge_case_is_valid_and_stays_proposed(self):
         case=json.loads((ROOT/'case-studies/merge-community-public-signals/report.json').read_text(encoding='utf-8'))
         self.assertEqual(module.validate(case),[])

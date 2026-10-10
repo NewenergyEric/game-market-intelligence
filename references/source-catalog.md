@@ -46,7 +46,7 @@
 | [Newzoo](https://newzoo.com/) | market, engagement, revenue | entry_checked | 宏观、品类、平台数据不自动适用于我方细分；商业权限待核 |
 | [Niko Partners](https://nikopartners.com/) | market, engagement | entry_checked | 地区调查/市场模型按原方法使用 |
 | [Statista](https://www.statista.com/topics/868/video-games/) | market | entry_checked | 聚合页回溯原来源，Market Insights 预测和已发生数据分开 |
-| [InvestGame Mobile Market Landscape 2026](https://investgame.net/wp-content/uploads/2026/02/2026-02-06-upload_Reports_EN_MobileMarkeLandscape2026.pdf) | market, revenue, product | source_checked | Merge 章节基于 AppMagic 的第三方估算；不含网页商店和其他收入 |
+| [InvestGame Mobile Market Landscape 2026](https://investgame.net/wp-content/uploads/2026/02/2026-02-06-upload_Reports_EN_MobileMarkeLandscape2026.pdf) | market, revenue, product | entry_checked | Merge 章节基于 AppMagic 的第三方估算；不含网页商店和其他收入 |
 | [ESA](https://www.theesa.com/) | market, engagement | entry_checked | 美国行业与玩家研究；原调查样本及时间窗需记录 |
 | [Video Games Europe / GSD](https://www.videogameseurope.eu/) | market, revenue | entry_checked | 欧洲报告与 GSD 样本参与范围分开；目录入口不是全市场覆盖保证 |
 | [Ukie](https://ukie.org.uk/) | market | entry_checked | 英国行业报告与榜单；转载数据追踪原发布方 |
@@ -69,7 +69,7 @@
 | [Nintendo IR](https://www.nintendo.co.jp/ir/en/) | financials, revenue | entry_checked | 硬件/软件、出货/销售、财年口径分别记录 |
 | [Sony IR](https://www.sony.com/en/SonyInfo/IR/) | financials, revenue | entry_checked | 游戏分部收入不直接对应单游戏销量 |
 | [Microsoft IR](https://www.microsoft.com/en-us/Investor/) | financials | candidate | Gaming/Xbox 内容服务按实际披露；入口候选待具体报告核读 |
-| [Metacore 官方新闻](https://metacoregames.com/news/metacore-appoints-jose-saarniniemi-as-general-manager-of-merge-mansion) | financials, product, market | source_checked | Merge Mansion 生命周期披露；没有地区、渠道或年度拆分 |
+| [Metacore 官方新闻](https://metacoregames.com/news/metacore-appoints-jose-saarniniemi-as-general-manager-of-merge-mansion) | financials, product, market | entry_checked | Merge Mansion 生命周期披露；没有地区、渠道或年度拆分 |
 
 ## 买量创意与需求
 
