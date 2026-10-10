@@ -1,25 +1,27 @@
 # Game Market Intelligence Director · 24s
 
-Public research case · Merge + community
+Three real products · six comparison axes
 
-## 1. Is this direction worth pursuing?
+## 1. Look beyond genre. Understand the business.
 
-Give your agent the idea, target market and decision you need to make.
+Start with the audience, region and team constraints.
 
-## 2. Find the numbers. Keep the sources.
+## 2. One evidence base. Six useful lenses.
 
-Store observations, publisher disclosures and estimates keep their own definitions.
+Compare genre, IP, region, language, payment and capacity.
 
-## 3. Read the growth. See the competition.
+## 3. A supported language. A proven market?
 
-Category share is growing. Revenue is still concentrated.
+Separate product capability from regional performance.
 
-## 4. What should we test first?
+## 4. Missing evidence. A concrete next test.
 
-Turn the market findings into a focused validation round.
+Assign an owner, a question and a stop condition.
 
 ## 5. Hand off the call. Keep the evidence.
 
-Findings, sources, open questions and next steps travel together.
+Comparison rows, sources and unknowns travel together.
 
-Public signals support a further test. The owner makes the greenlight call.
+Public-source comparison; regional CPI/LTV and IP terms remain unknown.
+
+[Case](../../case-studies/cross-market-entry/README.en.md)

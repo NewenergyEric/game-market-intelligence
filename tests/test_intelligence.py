@@ -10,6 +10,21 @@ spec=importlib.util.spec_from_file_location('intelligence',ROOT/'scripts/intelli
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 
 class IntelligenceTests(unittest.TestCase):
+    def test_cross_market_matrix_exports_every_evidence_backed_cell(self):
+        import csv
+        case=json.loads((ROOT/'case-studies/cross-market-entry/report.json').read_text(encoding='utf-8'))
+        self.assertEqual(module.validate(case),[])
+        with tempfile.TemporaryDirectory() as directory:
+            out=Path(directory)/'report';module.render(case,out)
+            with (out/'comparison.csv').open(encoding='utf-8-sig') as file: rows=list(csv.DictReader(file))
+            self.assertEqual(len(rows),18)
+            self.assertTrue(all(row['claim_ids'] and row['value_en'] for row in rows))
+        case['comparison']['products'][0]['cells']['genre']['claim_ids']=['MISSING']
+        self.assertTrue(any('evidence claim' in e for e in module.validate(case)))
+    def test_missing_axis_cannot_silently_disappear(self):
+        case=json.loads((ROOT/'case-studies/cross-market-entry/report.json').read_text(encoding='utf-8'))
+        case['comparison']['products'][0]['cells'].pop('genre')
+        self.assertTrue(any('every axis' in e for e in module.validate(case)))
     def setUp(self): self.data=json.loads((ROOT/'examples/merge-research.json').read_text(encoding='utf-8'))
     def test_missing_market_numbers_are_preserved(self):
         self.assertEqual(module.validate(self.data),[])

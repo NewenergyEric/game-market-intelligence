@@ -1,5 +1,5 @@
 {
-  "system": "Art Director-aligned role film v3",
+  "system": "Art Director-aligned depth case film v4",
   "languages": [
     "zh-CN",
     "en"
@@ -28,8 +28,8 @@
   },
   "assets": {
     "assets/readme/hero-zh.mp4": {
-      "bytes": 2071443,
-      "sha256": "a4ecd8ae6a2d7fcd347e11007b740a55788c6706b57dfdf2aee74c6ba935e7ed",
+      "bytes": 1431124,
+      "sha256": "a655e1a27aa30bbc64799675e3cd92093718dbb41a95d7770a7d53fcb1112efd",
       "dimensions": [
         1280,
         720
@@ -39,8 +39,8 @@
       "frames": 720
     },
     "assets/readme/hero-zh.gif": {
-      "bytes": 5341731,
-      "sha256": "0e01db4d1f72e689782676cc4c3eaeeb90cdeb5c1f8d788b9aca762a38cfa7f8",
+      "bytes": 4932302,
+      "sha256": "4cf099c6021acf0a7ab2382079ab80ba06cf22ed3a920f58a3ba265ca6af0585",
       "dimensions": [
         800,
         450
@@ -50,25 +50,36 @@
       "frames": 480,
       "palette_colors": 64
     },
+    "assets/readme/hero-zh.webp": {
+      "bytes": 2148156,
+      "sha256": "63918426c4ae38b994bfaaa8a960ea856fdf93b809508fd58ebab18fc8231079",
+      "dimensions": [
+        800,
+        450
+      ],
+      "duration_seconds": 24,
+      "fps": 20,
+      "frames": 480
+    },
     "assets/readme/hero-zh.png": {
-      "bytes": 546425,
-      "sha256": "9c483cfc386b3c0e5d81758ab0335a0da31d3217ac11cf54eb6f19bbff1d1f93",
+      "bytes": 549018,
+      "sha256": "e0e1306d6139ae0c30419b0b7698947fd33d21f3db840fa703079bdbe268ff38",
       "dimensions": [
         1280,
         720
       ]
     },
-    "case-studies/merge-community-public-signals/dashboard-zh.png": {
-      "bytes": 222896,
-      "sha256": "f6d1d13d0a30af48b65333c62f0a89154de7194aaacce04bcda2cf3958b44cbf",
+    "case-studies/cross-market-entry/dashboard-zh.png": {
+      "bytes": 230207,
+      "sha256": "818eada4adf06a3a9f261c31da7f41b5a5f8aa82cf314fa61d84eadcfc9a9b43",
       "dimensions": [
         1600,
         1040
       ]
     },
     "assets/readme/hero-en.mp4": {
-      "bytes": 2271746,
-      "sha256": "be827897957956e0a12ed69d9eab33f297b3901055387826837d81e85b310bd0",
+      "bytes": 1518429,
+      "sha256": "2e1cd8666e19a04d31580d7b93019b0aec2c261b8f4eb21f26288a133721156b",
       "dimensions": [
         1280,
         720
@@ -78,8 +89,8 @@
       "frames": 720
     },
     "assets/readme/hero-en.gif": {
-      "bytes": 5749921,
-      "sha256": "f7bd2ee84851c996af47d9f7d85c72df278027524ee0fe3f4bf4505860577483",
+      "bytes": 5263368,
+      "sha256": "d9b8a302b216560d3944f1a83aff815d74ca35b9e238f6f8a19df8cae8f9adfd",
       "dimensions": [
         800,
         450
@@ -89,17 +100,28 @@
       "frames": 480,
       "palette_colors": 64
     },
+    "assets/readme/hero-en.webp": {
+      "bytes": 2174002,
+      "sha256": "8625840e9e9896347c54876f15eff4ab21af4ac33d0c27c620ce0b5396f9c5d2",
+      "dimensions": [
+        800,
+        450
+      ],
+      "duration_seconds": 24,
+      "fps": 20,
+      "frames": 480
+    },
     "assets/readme/hero-en.png": {
-      "bytes": 552653,
-      "sha256": "22a2a3ea8997bd05fd5a1e36b23479abc76f34d02e466c7b4279d8cb56d51056",
+      "bytes": 554881,
+      "sha256": "0270e80d53e70e3db1392fab7af7f35cc6f3258698cf2ae2c99454002f16108a",
       "dimensions": [
         1280,
         720
       ]
     },
-    "case-studies/merge-community-public-signals/dashboard-en.png": {
-      "bytes": 217534,
-      "sha256": "16cde04123794b6bfcd2fc6f97408ffe987564ae3e1dbc82c6847bb553d1ebe8",
+    "case-studies/cross-market-entry/dashboard-en.png": {
+      "bytes": 204078,
+      "sha256": "429b3ac9e001c5e64b920ae8200c0ed95ae45df534d70424cb4029c298b4c260",
       "dimensions": [
         1600,
         1040
@@ -116,5 +138,5 @@
   "reference": "https://github.com/NewenergyEric/art-director-skill",
   "provenance": "Original role-specific Remotion composition. Font: Noto Sans SC variable subset, SIL OFL. No proprietary fonts or target-game art copied.",
   "content_rule": "Human prompts, concrete steps and actual tool outputs. Both languages share the same case baseline. Complete boards are rendered independently from animation.",
-  "case_baseline": "case-studies/merge-community-public-signals/report.json"
+  "case_baseline": "case-studies/cross-market-entry/report.json"
 }

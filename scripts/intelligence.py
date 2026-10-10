@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Source routing and evidence-backed report rendering; Python stdlib only."""
 import argparse
+import csv
 import html
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -60,6 +62,33 @@ def validate(data, sources=None):
         errors.append('recommendation status must be proposed or confirmed')
     if recommendation.get('status') == 'confirmed' and not recommendation.get('authority_reference'):
         errors.append('confirmed decision needs an authority reference')
+    comparison = data.get('comparison')
+    if comparison is not None:
+        if not isinstance(comparison, dict):
+            return errors + ['comparison must be an object']
+        axes = comparison.get('axes', [])
+        if not isinstance(axes, list) or not axes or any(not isinstance(a, dict) or not isinstance(a.get('id'), str) or not a.get('id') or not a.get('label') for a in axes):
+            return errors + ['comparison axes need unique IDs and labels']
+        axis_ids = {a['id'] for a in axes}
+        if len(axis_ids) != len(axes): errors.append('duplicate comparison axis')
+        products = comparison.get('products', [])
+        if not isinstance(products, list) or not products:
+            return errors + ['comparison products must be a nonempty list']
+        product_ids = set()
+        for product in products:
+            if not isinstance(product, dict) or not isinstance(product.get('id'), str) or not product.get('id') or not product.get('name'):
+                errors.append('comparison product needs ID and name'); continue
+            if product['id'] in product_ids: errors.append('duplicate comparison product')
+            product_ids.add(product['id'])
+            cells = product.get('cells')
+            if not isinstance(cells, dict) or set(cells) != axis_ids:
+                errors.append(product['id'] + ': include every axis; record unknowns explicitly'); continue
+            for axis, cell in cells.items():
+                if not isinstance(cell, dict) or not isinstance(cell.get('text'), str) or not cell['text'].strip():
+                    errors.append(f"{product['id']}/{axis}: missing cell text"); continue
+                refs = cell.get('claim_ids')
+                if not isinstance(refs, list) or not refs or any(not isinstance(ref, str) or ref not in seen for ref in refs):
+                    errors.append(f"{product['id']}/{axis}: cell requires valid evidence claim IDs")
     return errors
 
 
@@ -77,14 +106,40 @@ def render(data, out):
     for c in data['claims']:
         value = '未知：' + c['unknown_reason'] if c['value'] is None else str(c['value']) + ' ' + str(c['unit'])
         evidence = json.dumps(c['evidence'], ensure_ascii=False)
-        rows.append('<tr>' + ''.join(f'<td>{esc(v)}</td>' for v in [c['id'], c['statement'], c['kind'], value, c['period'], evidence]) + '</tr>')
+        links=[]
+        for entry in c['evidence'] if isinstance(c['evidence'], list) else []:
+            if isinstance(entry, dict) and isinstance(entry.get('url'),str) and urlsplit(entry['url']).scheme in ('http','https'):
+                links.append('<a href="'+esc(entry['url'])+'">'+esc(urlsplit(entry['url']).netloc)+'</a><br><small>'+esc(entry.get('locator',''))+'</small>')
+        citation='<br>'.join(links) if links else esc(evidence)
+        rows.append('<tr>' + ''.join(f'<td>{esc(v)}</td>' for v in [c['id'], c['statement'], c['kind'], value, c['period']]) + '<td>'+citation+'</td></tr>')
         md += [f"- **{c['id']} · {c['statement']}**：{value}（{c['kind']}，{c['period']}）", f'  依据：{evidence}', '']
     md += ['## 待验证', ''] + ['- ' + str(u) for u in data['unknowns']]
+    matrix = ''
+    if data.get('comparison'):
+        comparison = data['comparison']
+        axes = comparison['axes']
+        header = '<th>产品 / 比较维度</th>' + ''.join('<th>' + esc(a['label']) + '</th>' for a in axes)
+        matrix_rows = []
+        with (out / 'comparison.csv').open('w', encoding='utf-8-sig', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['product_id', 'product', 'axis', 'value', 'value_en', 'claim_ids'])
+            md += ['', '## 多视角比较', '']
+            for product in comparison['products']:
+                cells = []
+                md += ['### ' + product['name'], '']
+                for axis in axes:
+                    cell = product['cells'][axis['id']]
+                    refs = ', '.join(cell['claim_ids'])
+                    cells.append('<td>' + esc(cell['text']) + '<br><small>' + esc(refs) + '</small></td>')
+                    writer.writerow([product['id'], product['name'], axis['id'], cell['text'], cell.get('text_en', ''), refs])
+                    md.append(f"- **{axis['label']}**：{cell['text']} · {refs}")
+                matrix_rows.append('<tr><th>' + esc(product['name']) + '</th>' + ''.join(cells) + '</tr>')
+        matrix = '<h2>多视角比较</h2><div class="scroll"><table><thead><tr>' + header + '</tr></thead><tbody>' + ''.join(matrix_rows) + '</tbody></table></div>'
     page = f'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{esc(data['title'])}</title><style>body{{max-width:1160px;margin:40px auto;padding:0 24px;font:16px/1.75 system-ui;color:#172c35;background:#f7f8f5}}h1{{line-height:1.2}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{padding:12px;border:1px solid #d6e1dc;text-align:left;vertical-align:top;overflow-wrap:anywhere}}.scroll{{overflow:auto}}.note{{background:#e7f1ed;padding:18px}}@media print{{body{{margin:0;background:white;font-size:11pt}}tr{{break-inside:avoid}}}}</style>
+<title>{esc(data['title'])}</title><style>body{{max-width:1160px;margin:40px auto;padding:0 24px;font:16px/1.75 system-ui;color:#14374b;background:#f5f9fb}}h1{{line-height:1.2;background:#001f3f;color:#f5f9fb;padding:32px;margin:0 -24px 28px;letter-spacing:-1px}}a{{color:#007d86;text-underline-offset:4px}}h2{{color:#007d86}}small{{font-size:12px;color:#486674}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{padding:12px;border:0;border-bottom:1px solid #c6d7dc;text-align:left;vertical-align:top;overflow-wrap:anywhere}}.scroll{{overflow:auto}}.note{{background:#dfeded;border-left:3px solid #007d86;padding:18px}}@media print{{body{{margin:0;background:white;font-size:11pt}}tr{{break-inside:avoid}}}}</style>
 <h1>{esc(data['title'])}</h1><p>{esc(data['question'])}</p><p>范围：{esc(json.dumps(data['scope'],ensure_ascii=False))}</p>
 <div class="note"><b>建议 · {esc(data['recommendation']['status'])}</b><p>{esc(data['recommendation'].get('text',''))}</p></div>
-<h2>证据与结论</h2><div class="scroll"><table><thead><tr><th>ID</th><th>结论</th><th>性质</th><th>值/缺口</th><th>业务期间</th><th>具体证据</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+{matrix}<h2>证据与结论</h2><div class="scroll"><table><thead><tr><th>ID</th><th>结论</th><th>性质</th><th>值/缺口</th><th>业务期间</th><th>具体证据</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <h2>待验证</h2><ul>{''.join('<li>'+esc(u)+'</li>' for u in data['unknowns'])}</ul>
 <p>本报告仅呈现输入底稿；未取得的指标未自动补齐。可通过浏览器打印保存 PDF。</p></html>'''
     (out / 'report.html').write_text(page, encoding='utf-8')

@@ -4,86 +4,71 @@
 
 ### 看清市场，决定下一步。
 
-**给制作人一个能继续行动的答案。**
+决定一个游戏怎么进入市场，要把玩家与玩法、IP、地区渠道、语言文化、付费方式、竞争和团队产能放在一起看。这个 Skill 引导 Agent 建比较底稿，保留证据，再把关键缺口变成验证任务。
 
-输入项目方向、目标市场和要做的决定。Agent 帮你选来源、对齐竞品口径、整理机会与风险，最后给出一轮具体的验证建议。已有研究可以接着补，资料不齐也能先写清已知与缺口。
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero-zh.png?v=depth-v4">
+  <img src="assets/readme/hero-zh.webp?v=depth-v4" width="100%" alt="把类型、IP、地区、语言和付费方式，放进同一轮有证据的决策。">
+</picture>
 
-<a href="assets/readme/hero-zh.mp4"><picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero-zh.png?v=workflow-v3">
-  <img src="assets/readme/hero-zh.gif?v=workflow-v3" width="100%" alt="把一个立项问题，变成有来源的判断和下一轮验证。">
-</picture></a>
-
-[24 秒，走完一次完整工作 · 播放 MP4](assets/readme/hero-zh.mp4) · [文字版](assets/readme/transcript-zh.md)
+[下载完整介绍 · 24 秒 MP4](assets/readme/hero-zh.mp4?raw=true) · [GIF](assets/readme/hero-zh.gif) · [文字版](assets/readme/transcript-zh.md)
 
 ## 装好，然后直接说
-
-在支持 Agent Skills 的工具中安装，例如 Codex、Claude Code 或 Cursor：
 
 ```sh
 npx skills add https://github.com/NewenergyEric/game-market-intelligence
 ```
 
-把资料放进 Agent 能读取的文件夹，再说出要解决的问题。文件整理和命令由 Agent 处理。
+在支持 Agent Skills 的工具中安装，例如 Codex、Claude Code、Cursor；将资料放进 Agent 能读取的位置，再描述问题。
 
-### 我有一个方向，想知道先查什么
+### 跨类型选择
 
-> 使用 `$game-market-intelligence`。我们沿用 Merge＋社区方向，目标是海外手游。先帮我整理研究问题，核对公开市场信号，告诉我机会、主要风险和下一步最值得验证的事。
+> 我们擅长社区叙事。比较 Merge 手游、IP 社交和买断模拟：各自适合谁、靠什么收入、对内容产能要求如何？
 
-**你会得到：** 研究范围、带来源的判断、待补问题和验证建议。Agent 只补问影响当前结论的资料。
+得到六维对照、可核对来源、差异与缺口；不会把跨平台收入直接排成名次。
 
-### 我拿到几份数据，想知道能不能放在一起比较
+### 进入新地区
 
-> 这些是竞品数据和报告。帮我核对地区、平台、时间与指标定义，分清一方披露、第三方估算和未知，把真正可比的内容整理成表。
+> 同一玩法进日本、北美、巴西，语言、支付、渠道、文化适配和竞争分别要验证什么？
 
-**你会得到：** 可比较的证据表、原始出处、不能直接相加或对比的数字，以及补数方法。
+按地区建立研究计划与证据表。付费数据库或本地指标不可用时，明确标为未知。
 
-### 准备开评审会，要把研究交给团队
+### 从观察到下一轮实验
 
-> 把这轮研究整理成决策简报。先说建议、风险和下一次验证，再附来源、口径和未知项；把需要负责人决定的内容单列。
+> 支持 12 种语言能说明什么？我们还缺哪些证据才适合立项？
 
-**你会得到：** 人能阅读的报告与 Agent 能继续处理的底稿。负责人确认后，再交给拆解或项目管理岗位。
+区分语言能力与市场表现，把 CPI/LTV、IP 条款、内容与本地化产能交给对应负责人验证。
+
+## 看一个具体案例
+
+**真实公开研究：Gossip Harbor、MONOPOLY GO!、Stardew Valley。** 三款产品 × 六个比较维度，18 个带证据 ID 的单元；覆盖类型、IP、地区、语言、付费与产能。保留原 Merge 行业案例，新增跨类型比较。
+
+[完整分析与可下载底稿](case-studies/cross-market-entry/README.md)
+
+[![游戏市场研究总监](case-studies/cross-market-entry/dashboard-zh.png?v=depth-v4)](case-studies/cross-market-entry/dashboard-zh.png)
+
+[继续看 Merge 行业的收入、增长与集中度案例](case-studies/merge-community-public-signals/README.md)
 
 ## 最后交给团队什么
 
-- **研究判断：** 项目问题、机会、主要风险与下一次验证。
-- **证据底稿：** 来源、日期、平台、地区和指标定义都可追溯。
-- **可分享报告：** HTML、Markdown 和 JSON 来自同一份输入。
-
-## 看一份真实研究：Merge＋社区
-
-[公开信号案例](case-studies/merge-community-public-signals/README.md)从 Google Play、Metacore 披露与 AppMagic 支持的行业报告出发，得到一个具体判断：品类份额扩大，但头部收入集中，下一步应验证切入方式。
-
-2025 年的品类数字保留估算标签；商店快照和生命周期披露分开使用。我方 CPI、LTV、留存和产能仍是待补项。
-
-[![看一份真实研究：Merge＋社区](case-studies/merge-community-public-signals/dashboard-zh.png?v=workflow-v3)](case-studies/merge-community-public-signals/dashboard-zh.png)
-
-## 和其他岗位一起用
-
-市场研究给出证据与待验证问题；[拆解分析师](https://github.com/NewenergyEric/game-reverse-analyst)理解竞品结构；[项目经理](https://github.com/NewenergyEric/game-production-manager)把确认后的方向拆成执行工作；[Art Director](https://github.com/NewenergyEric/art-director-skill)建立专业美术规范。
+- 跨类型比较底稿 — `comparison.csv`
+- 可分享研究报告 — `report.html`
+- 结论、来源与缺口 — `report.json`
 
 <details>
-<summary><strong>安装要求、技术文档与验证</strong></summary>
+<summary>能力边界、说明书与验证</summary>
 
-Python 3.10+，核心工具仅用标准库。6 项确定性测试验证证据要求、未知保留、HTML 转义及来源路由。
+79 个国内外数据源入口不等于 79 个已连接 API。单款估算、财报分部、商店观察分别保留口径；语言不等于地区收入，授权 IP 不等于获得我方使用权。公开比较不包含投放实验或未取得的付费数据。
 
-[人类详细说明](docs/HUMAN-GUIDE.md) · [Agent 调用说明](docs/AGENT-GUIDE.md) · [Skill 入口](SKILL.md) · [验证与审查](evals/)
+核心工具使用 Python 3.10+ 标准库；动画源码是可选的 Remotion 工程。
+
+[人类说明书](docs/HUMAN-GUIDE.md) · [Agent guide](docs/AGENT-GUIDE.md) · [SKILL.md](SKILL.md) · [Tests and review](evals/) · [Motion source](motion/README.md)
 
 ```sh
-python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
-python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
+python -m unittest discover -s tests -v
+python scripts/check_presentation.py
 ```
 
-[CI](https://github.com/NewenergyEric/game-market-intelligence/actions) · [Motion source](motion/README.md)
-
 </details>
 
-<details>
-<summary><strong>能力边界与资料使用</strong></summary>
-
-来源目录收录 77 个国内外研究入口，涵盖手游、PC／主机、行业报告、一方披露、买量和玩家观察。收录表示可研究的来源；账号、付费数据与 API 权限由使用环境提供。
-
-第三方流水保持估算标签，财报按原披露范围使用；未知值不补成数字。研究建议交给负责人决定。
-
-</details>
-
-[MIT License](LICENSE) · 由 Eric 与 Agents 一起制作。
+[MIT License](LICENSE) · Made by Eric and Agents.

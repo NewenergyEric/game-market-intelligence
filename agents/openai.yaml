@@ -1,4 +1,4 @@
 interface:
   display_name: "游戏市场研究总监"
-  short_description: "把 Merge／社区游戏问题变成有证据、可比较、可交接的国内外市场判断"
+  short_description: "从类型、IP、地区、语言与付费方式建立有证据、可比较、可交接的国内外市场判断"
   default_prompt: "请使用 $game-market-intelligence，先读取 SKILL.md 和人类/Agent 说明，再结合我提供的项目材料组织来源、保留未知与限制，输出决策摘要、证据链和下一步验证。"

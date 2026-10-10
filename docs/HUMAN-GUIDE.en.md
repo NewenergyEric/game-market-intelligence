@@ -1,51 +1,29 @@
 # Game Market Intelligence Director · Human guide
 
-[中文](HUMAN-GUIDE.md)
+A market decision connects audience and genre with IP, regional channels, culture, payment, competition and team capacity. This Skill guides your agent through evidence-backed comparisons and turns critical gaps into concrete research tasks.
 
-Turn a greenlight question into sourced findings and a practical next test.
+## Compare product routes
 
-## Bring your materials
+> Our team knows community storytelling. Compare Merge mobile, IP-led social and paid simulation: audience, revenue model and content workload.
 
-Give your agent the idea, target market and decision you need to make.
-Incomplete material is fine to start; missing inputs that affect the next step stay visible.
+Receive a six-axis comparison with sources, differences and open questions; no cross-platform revenue ranking.
 
-## I have a direction. What should we research?
+## Enter a new region
 
-> Use `$game-market-intelligence`. We are exploring Merge + community for overseas mobile markets. Frame the research, check public signals, and show the opportunity, key risks and what to test next.
+> What should we validate for Japan, North America and Brazil: language, payment, distribution, culture and competitors?
 
-A research scope, sourced findings, missing inputs and a proposed validation plan. The agent asks only for information that affects the current call.
+Build a regional research plan and evidence table. Unavailable paid data and local metrics remain explicitly unknown.
 
-## I have several reports. Are the numbers comparable?
+## Turn observations into tests
 
-> Check these competitor reports for region, platform, period and metric definitions. Separate publisher disclosures, third-party estimates and unknowns. Build a table of what we can actually compare.
+> What does support for 12 languages establish? What evidence is still missing before greenlighting?
 
-A comparable evidence table, original sources, numbers that cannot be added or compared directly, and a plan for filling gaps.
+Separate product capability from commercial performance; assign CPI/LTV, IP terms and localization capacity research to accountable roles.
 
-## We need a review brief for the team
+## Review and handoff
 
-> Turn this research into a decision brief. Lead with the recommendation, risks and next test; attach sources, definitions and unknowns. List the decisions that need an owner.
+79 domestic and international source entries are not 79 connected APIs. Title estimates, company segments and storefront observations retain their own scope. Language support is not regional revenue; a licensed competitor IP does not grant us usage rights. This case contains no ad experiment or unavailable paid data.
 
-A readable report and a structured record another agent can continue. After the owner decides, hand the direction to analysis or production planning.
+[Reproducible case](../case-studies/cross-market-entry/README.en.md)
 
-## How to review
-
-The catalog contains 77 domestic and international research sources across mobile, PC/console, industry reports, company disclosures, advertising and player observations. A catalog entry is a research route; accounts, paid data and API access come from the working environment.
-
-Third-party revenue stays estimated, financial disclosures keep their stated scope, and missing values remain unknown. The owner makes the final decision.
-
-## Outputs and handoff
-
-- **Research call:** the project question, opportunity, risks and next validation.
-- **Evidence record:** traceable sources, dates, regions, platforms and definitions.
-- **Shareable report:** HTML, Markdown and JSON generated from one input.
-
-Research supplies evidence and open questions. The [Reverse Analyst](https://github.com/NewenergyEric/game-reverse-analyst) explains competitor structure. The [Production Manager](https://github.com/NewenergyEric/game-production-manager) turns confirmed direction into tasks. [Art Director](https://github.com/NewenergyEric/art-director-skill) builds the professional visual rules.
-
-## Technical entry for your agent
-
-Python 3.10+; the core uses the standard library. Six deterministic tests cover evidence requirements, unknowns, HTML escaping and source routing.
-
-```sh
-python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
-python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-report
-```
+[Agent guide](AGENT-GUIDE.en.md)
