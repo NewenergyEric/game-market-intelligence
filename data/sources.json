@@ -1,0 +1,1953 @@
+{
+  "schema_version": "0.1",
+  "updated_on": "2026-10-10",
+  "sources": [
+    {
+      "id": "sensor-tower",
+      "name": "Sensor Tower（含 data.ai 历史入口）",
+      "url": "https://sensortower.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "revenue",
+        "engagement",
+        "ads",
+        "market"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "第三方单款指标为估算；商店、广告收入与渠道覆盖按字段核对",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "corporate_group": "sensor-tower",
+      "dataset_independence": "unverified; evaluate record lineage, not brand count",
+      "aliases": [
+        "data.ai",
+        "App Annie"
+      ]
+    },
+    {
+      "id": "appmagic",
+      "name": "AppMagic",
+      "url": "https://appmagic.rocks/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "revenue",
+        "market",
+        "product"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "保留 IAP、广告、分成与地域口径；与同集团来源独立性另核",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "corporate_group": "sensor-tower",
+      "dataset_independence": "unverified; evaluate record lineage, not brand count"
+    },
+    {
+      "id": "qimai",
+      "name": "七麦数据",
+      "url": "https://www.qimai.cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "revenue",
+        "engagement",
+        "product"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "中国 iOS 与 Android 渠道覆盖分开；本次主页读取受限，账号/字段待核",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "diandian",
+      "name": "点点数据",
+      "url": "https://www.diandian.com/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "revenue",
+        "engagement",
+        "market"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "官网解决方案可核读；本次主站超时，估算及 API 具体字段需账号验证",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "dataeye",
+      "name": "DataEye",
+      "url": "https://www.dataeye.com/api.html",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "ads",
+        "market",
+        "product"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "官方营销 API 候选；素材/买量信号不直接等于实际流水",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://www.dataeye.com/api.html",
+      "account_access": "unverified"
+    },
+    {
+      "id": "chandashi",
+      "name": "蝉大师",
+      "url": "https://www.chandashi.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "engagement",
+        "ads",
+        "product"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "当前主页需 JavaScript；具体游戏/应用数据产品和权限仍待验证",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "gamerefinery",
+      "name": "GameRefinery",
+      "url": "https://www.gamerefinery.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "product",
+        "market",
+        "revenue"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "功能/LiveOps 与表现研究；不同套餐和 API 权限分开核对",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://www.gamerefinery.com/contact-us/",
+      "account_access": "unverified"
+    },
+    {
+      "id": "similarweb",
+      "name": "Similarweb App Intelligence",
+      "url": "https://www.similarweb.com/corp/apps/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "topics": [
+        "engagement",
+        "revenue",
+        "market"
+      ],
+      "group": "单款与竞争情报",
+      "limitations": "模型/面板与具体样本覆盖需记录；非发行商实际财务",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "steam-api",
+      "name": "Steam 官方 Web API",
+      "url": "https://partner.steamgames.com/doc/webapi_overview",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "product",
+        "engagement",
+        "own-data"
+      ],
+      "group": "PC与主机",
+      "limitations": "公开信息与发行商授权数据分开，不提供他人真实营收",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://partner.steamgames.com/doc/webapi_overview",
+      "account_access": "unverified"
+    },
+    {
+      "id": "steamdb",
+      "name": "SteamDB",
+      "url": "https://steamdb.info/faq/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "engagement",
+        "product"
+      ],
+      "group": "PC与主机",
+      "limitations": "活跃/价格/历史参照，不是销量流水工具；不自动抓取",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "steamspy",
+      "name": "SteamSpy",
+      "url": "https://steamspy.com/about",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "engagement",
+        "market"
+      ],
+      "group": "PC与主机",
+      "limitations": "拥有者抽样估算不是净销量，误差与区间不能抹掉",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "vgi",
+      "name": "VG Insights / VGI",
+      "url": "https://app.sensortower.com/vgi/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "revenue",
+        "market",
+        "product"
+      ],
+      "group": "PC与主机",
+      "limitations": "第三方销量/收入估算；与 Sensor Tower 数据链关系需核实",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "corporate_group": "sensor-tower",
+      "dataset_independence": "unverified; evaluate record lineage, not brand count",
+      "interface_reference": "https://app.sensortower.com/vgi/api/v4/api-docs/",
+      "account_access": "unverified"
+    },
+    {
+      "id": "gamalytic",
+      "name": "Gamalytic",
+      "url": "https://gamalytic.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "revenue",
+        "market"
+      ],
+      "group": "PC与主机",
+      "limitations": "保留第三方估算标签；具体 API 与权限未验证",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "gamediscoverco",
+      "name": "GameDiscoverCo",
+      "url": "https://gamediscover.co/docs/mcp/getting-started",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc",
+        "console"
+      ],
+      "topics": [
+        "revenue",
+        "market",
+        "product"
+      ],
+      "group": "PC与主机",
+      "limitations": "Pro/已开通 MCP 才可接；数据估算与发行商披露区分",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "MCP"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://gamediscover.co/docs/mcp/getting-started",
+      "account_access": "unverified"
+    },
+    {
+      "id": "vgchartz",
+      "name": "VGChartz",
+      "url": "https://www.vgchartz.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "console",
+        "pc"
+      ],
+      "topics": [
+        "revenue",
+        "market"
+      ],
+      "group": "PC与主机",
+      "limitations": "按单条注明官方披露/估算及 sell-in/sell-through；方法页本次读取未完成",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "metacritic",
+      "name": "Metacritic",
+      "url": "https://www.metacritic.com/about-us/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "console",
+        "pc",
+        "mobile"
+      ],
+      "topics": [
+        "sentiment",
+        "product"
+      ],
+      "group": "PC与主机",
+      "limitations": "评价与口碑来源，不提供可靠的单款流水结论",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "circana",
+      "name": "Circana Video Games",
+      "url": "https://www.circana.com/industries/video-games",
+      "regions": [
+        "us"
+      ],
+      "platforms": [
+        "console",
+        "pc",
+        "mobile"
+      ],
+      "topics": [
+        "market",
+        "revenue",
+        "engagement"
+      ],
+      "group": "PC与主机",
+      "limitations": "报告/商业数据的地区、零售与数字参与范围需要原文口径",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "famitsu",
+      "name": "Famitsu / Fami通",
+      "url": "https://www.famitsu.com/ranking/game-sales/",
+      "regions": [
+        "japan"
+      ],
+      "platforms": [
+        "console"
+      ],
+      "topics": [
+        "market",
+        "revenue"
+      ],
+      "group": "PC与主机",
+      "limitations": "榜单范围和实体/数字覆盖逐期核实；入口候选尚未实测",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "cgigc",
+      "name": "中国音数协游戏工委",
+      "url": "https://new.cgigc.com.cn/report.html",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "读取原版报告并记录统计范围；联合发布内容不重复当作多源",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "gamma-data",
+      "name": "伽马数据（CNG）报告",
+      "url": "https://new.cgigc.com.cn/report.html",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "暂用工委正式报告入口追溯联合报告；CNG 独立官网/API 未核实，按具体署名确认",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "iresearch",
+      "name": "艾瑞咨询",
+      "url": "https://www.iresearch.com.cn/report.shtml?classId=90",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market",
+        "engagement"
+      ],
+      "group": "行业大盘",
+      "limitations": "报告年份与手游/小游戏范围单列；预测与统计不混用",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "analysys",
+      "name": "易观 / 易观千帆",
+      "url": "https://app.analysys.cn/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "topics": [
+        "engagement",
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "面板活跃/用户数据不是收入；试用数据时间可能不同",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "questmobile",
+      "name": "QuestMobile",
+      "url": "https://www.questmobile.com.cn/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "engagement",
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "面板样本/终端/应用覆盖按报告记录",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "newzoo",
+      "name": "Newzoo",
+      "url": "https://newzoo.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market",
+        "engagement",
+        "revenue"
+      ],
+      "group": "行业大盘",
+      "limitations": "宏观、品类、平台数据不自动适用于我方细分；商业权限待核",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "niko",
+      "name": "Niko Partners",
+      "url": "https://nikopartners.com/",
+      "regions": [
+        "asia",
+        "china",
+        "mena"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market",
+        "engagement"
+      ],
+      "group": "行业大盘",
+      "limitations": "地区调查/市场模型按原方法使用",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "statista",
+      "name": "Statista",
+      "url": "https://www.statista.com/topics/868/video-games/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "聚合页回溯原来源，Market Insights 预测和已发生数据分开",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "esa",
+      "name": "ESA",
+      "url": "https://www.theesa.com/",
+      "regions": [
+        "us"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market",
+        "engagement"
+      ],
+      "group": "行业大盘",
+      "limitations": "美国行业与玩家研究；原调查样本及时间窗需记录",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "vge",
+      "name": "Video Games Europe / GSD",
+      "url": "https://www.videogameseurope.eu/",
+      "regions": [
+        "europe"
+      ],
+      "platforms": [
+        "pc",
+        "console"
+      ],
+      "topics": [
+        "market",
+        "revenue"
+      ],
+      "group": "行业大盘",
+      "limitations": "欧洲报告与 GSD 样本参与范围分开；目录入口不是全市场覆盖保证",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "ukie",
+      "name": "Ukie",
+      "url": "https://ukie.org.uk/",
+      "regions": [
+        "uk"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "英国行业报告与榜单；转载数据追踪原发布方",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "kocca",
+      "name": "KOCCA 韩国内容振兴院",
+      "url": "https://www.kocca.kr/",
+      "regions": [
+        "korea"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "白皮书/调查入口候选，具体游戏报告与翻译待核",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "cesa",
+      "name": "CESA 日本游戏产业协会",
+      "url": "https://www.cesa.or.jp/",
+      "regions": [
+        "japan"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market"
+      ],
+      "group": "行业大盘",
+      "limitations": "白皮书/行业研究入口候选，具体年度与许可待核",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "igea",
+      "name": "IGEA",
+      "url": "https://igea.net/",
+      "regions": [
+        "australia",
+        "nz"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "market",
+        "engagement"
+      ],
+      "group": "行业大盘",
+      "limitations": "澳新市场与玩家报告入口候选，按具体报告样本核对",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "cninfo",
+      "name": "巨潮资讯",
+      "url": "https://www.cninfo.com.cn/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "公司/分部、会计期间和审计状态按原文，不自行拆分单款",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "hkex",
+      "name": "港交所披露易",
+      "url": "https://www.hkexnews.hk/",
+      "regions": [
+        "hong-kong",
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "原公司公告及年报；币种、分部和期间统一后比较",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "sec",
+      "name": "SEC EDGAR",
+      "url": "https://www.sec.gov/search-filings",
+      "regions": [
+        "us",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "法定披露/API；公司事实不能当作未披露产品数据",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://www.sec.gov/search-filings",
+      "account_access": "unverified"
+    },
+    {
+      "id": "tencent-ir",
+      "name": "腾讯 IR",
+      "url": "https://www.tencent.com/investors/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "业务分部与游戏数据只按公司实际披露使用",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "netease-ir",
+      "name": "网易 IR",
+      "url": "https://ir.netease.com/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "保留游戏与相关增值服务的实际口径",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "37-disclosures",
+      "name": "三七互娱公告（002555）",
+      "url": "https://www.cninfo.com.cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "在巨潮按公司/代码检索正式报告，不视为独立于巨潮的第二来源",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "perfect-disclosures",
+      "name": "完美世界公告（002624）",
+      "url": "https://www.cninfo.com.cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "同公司不同业务按分部披露，不由集团收入反推单游戏",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "g-bits-disclosures",
+      "name": "吉比特公告（603444）",
+      "url": "https://www.cninfo.com.cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "公告中的运营、财务与估算分开登记",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "nintendo-ir",
+      "name": "Nintendo IR",
+      "url": "https://www.nintendo.co.jp/ir/en/",
+      "regions": [
+        "global",
+        "japan"
+      ],
+      "platforms": [
+        "console"
+      ],
+      "topics": [
+        "financials",
+        "revenue"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "硬件/软件、出货/销售、财年口径分别记录",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "sony-ir",
+      "name": "Sony IR",
+      "url": "https://www.sony.com/en/SonyInfo/IR/",
+      "regions": [
+        "global",
+        "japan"
+      ],
+      "platforms": [
+        "console",
+        "pc"
+      ],
+      "topics": [
+        "financials",
+        "revenue"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "游戏分部收入不直接对应单游戏销量",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "microsoft-ir",
+      "name": "Microsoft IR",
+      "url": "https://www.microsoft.com/en-us/Investor/",
+      "regions": [
+        "global",
+        "us"
+      ],
+      "platforms": [
+        "console",
+        "pc"
+      ],
+      "topics": [
+        "financials"
+      ],
+      "group": "财报与一手披露",
+      "limitations": "Gaming/Xbox 内容服务按实际披露；入口候选待具体报告核读",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "meta-ads",
+      "name": "Meta Ad Library",
+      "url": "https://www.facebook.com/ads/library/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "ads"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "公开库与 API 覆盖不同，当前 API 权限未验证",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "tiktok-creative",
+      "name": "TikTok Creative Center",
+      "url": "https://ads.tiktok.com/business/creativecenter/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "topics": [
+        "ads",
+        "product"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "登录/地区限制与相对互动信号需记录，不能推断真实 ROAS",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "google-ads",
+      "name": "Google Ads Transparency Center",
+      "url": "https://adstransparency.google.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "ads"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "广告透明信息，不是完整花费或转化数据库",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "socialpeta",
+      "name": "SocialPeta",
+      "url": "https://socialpeta.com/en",
+      "regions": [
+        "global",
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "ads",
+        "market"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "商业广告情报；素材数量和投放观察不等于收入",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "appgrowing",
+      "name": "AppGrowing",
+      "url": "https://appgrowing.cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "ads",
+        "market"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "国内/海外产品覆盖分别核对；账号与导出待验证",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "oceanengine",
+      "name": "巨量引擎",
+      "url": "https://www.oceanengine.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "ads",
+        "own-data"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "官方报告/创意与我方广告后台区分，不含他人后台财务",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "tencent-ads",
+      "name": "腾讯广告",
+      "url": "https://e.qq.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "mini"
+      ],
+      "topics": [
+        "ads",
+        "own-data"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "我方账号实际数据可导出，公开行业材料另登记；入口候选",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "google-trends",
+      "name": "Google Trends",
+      "url": "https://trends.google.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "engagement",
+        "market"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "相对搜索热度不是用户数/营收；API 访问资格另核",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "baidu-index",
+      "name": "百度指数",
+      "url": "https://index.baidu.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "engagement",
+        "market"
+      ],
+      "group": "买量创意与需求",
+      "limitations": "关键词/采样与相对指数口径；页面依赖登录/JavaScript",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "steam-reviews",
+      "name": "Steam 官方评论 API",
+      "url": "https://partner.steamgames.com/doc/store/getreviews",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "pc"
+      ],
+      "topics": [
+        "sentiment"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "评论样本、语言、购买类型和时间窗可造成偏差",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://partner.steamgames.com/doc/store/getreviews",
+      "account_access": "unverified"
+    },
+    {
+      "id": "app-store",
+      "name": "Apple App Store",
+      "url": "https://apps.apple.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "product",
+        "sentiment"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "地区页面、版本、评分不等于完整用户群；不含后台营收",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "google-play",
+      "name": "Google Play",
+      "url": "https://play.google.com/store/games",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "product",
+        "sentiment"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "Google Play 覆盖不包含全部中国 Android 渠道",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "taptap",
+      "name": "TapTap",
+      "url": "https://www.taptap.cn/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile",
+        "pc"
+      ],
+      "topics": [
+        "product",
+        "sentiment"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "社区评分/预约与活跃样本不代表全市场",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "bilibili",
+      "name": "哔哩哔哩游戏内容",
+      "url": "https://www.bilibili.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "sentiment",
+        "product"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "录屏/评论的版本、样本与转载链需要定位",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Data API",
+      "url": "https://developers.google.com/youtube/v3",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "sentiment",
+        "product"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "配额与具体端点需验证；公开视频样本不是整体玩家意见",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://developers.google.com/youtube/v3",
+      "account_access": "unverified"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit 开发者入口",
+      "url": "https://developers.reddit.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "sentiment"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "当前数据 API/商业访问范围待核；公开评论按样本解释",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "discord",
+      "name": "Discord 开发者入口",
+      "url": "https://discord.com/developers/docs/intro",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "sentiment",
+        "own-data"
+      ],
+      "group": "玩家与产品观察",
+      "limitations": "仅有访问范围的频道/导出，私人社区不属于默认公开语料",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "gameanalytics",
+      "name": "GameAnalytics",
+      "url": "https://docs.gameanalytics.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "own-data",
+        "engagement"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "我方事件、漏斗、留存；benchmark 与自己实际数据分开",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "appsflyer",
+      "name": "AppsFlyer",
+      "url": "https://support.appsflyer.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "ads"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "归因窗/隐私模型和我方账号范围，非竞品真实财务",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "adjust",
+      "name": "Adjust",
+      "url": "https://help.adjust.com/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "ads"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "我方授权归因/报表路径，具体访问与字段待核",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase Analytics",
+      "url": "https://firebase.google.com/docs/analytics",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "topics": [
+        "own-data",
+        "engagement"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "自有事件与用户定义，未埋点的数据不能补造",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "app-store-connect",
+      "name": "App Store Connect",
+      "url": "https://developer.apple.com/app-store-connect/",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "revenue"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "仅账号有权管理的 App 数据，不是竞品流水入口",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "play-console",
+      "name": "Google Play Developer API",
+      "url": "https://developers.google.com/android-publisher",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "revenue"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "我方账号资源，具体经营指标按 Console/API 实際范围核对",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT",
+        "API"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false,
+      "interface_reference": "https://developers.google.com/android-publisher",
+      "account_access": "unverified"
+    },
+    {
+      "id": "wechat-mini",
+      "name": "微信小游戏开发者平台",
+      "url": "https://developers.weixin.qq.com/minigame/dev/guide/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mini"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "我方后台/公开说明，当前文档读取受限",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "douyin-mini",
+      "name": "抖音开放平台",
+      "url": "https://developer.open-douyin.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mini"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "小游戏与小程序的具体后台及字段分别核对",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "huawei",
+      "name": "华为开发者联盟",
+      "url": "https://developer.huawei.com/consumer/cn/",
+      "regions": [
+        "china",
+        "global"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "可访问自己的分发/经营数据；不能代表竞品所有渠道",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "oppo",
+      "name": "OPPO 开放平台",
+      "url": "https://open.oppomobile.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "入口可访问，账号内报表和字段尚未验证",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "vivo",
+      "name": "vivo 开放平台",
+      "url": "https://dev.vivo.com.cn/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "入口可访问，账号内报表和字段尚未验证",
+      "verification": "limited",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "xiaomi",
+      "name": "小米开放平台",
+      "url": "https://open.mi.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "入口本次读取未完成，具体后台和权限待核",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "yingyongbao",
+      "name": "应用宝开放平台",
+      "url": "https://open.qq.com/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "mobile"
+      ],
+      "topics": [
+        "own-data",
+        "product"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "使用自有发行商授权资料；入口及具体报表待验证",
+      "verification": "candidate",
+      "checked_on": null,
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "nppa",
+      "name": "国家新闻出版署游戏审批结果",
+      "url": "https://www.nppa.gov.cn/bsfw/jggs/yxspjg/",
+      "regions": [
+        "china"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "regulation",
+        "product"
+      ],
+      "group": "监管与发行环境",
+      "limitations": "审批条目不代表市场表现、许可解释或上市时间",
+      "verification": "entry_checked",
+      "checked_on": "2026-10-10",
+      "access_modes": [
+        "PUBLIC_WEB",
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    },
+    {
+      "id": "own-project",
+      "name": "团队自有项目资料",
+      "url": "local://user-provided-project",
+      "regions": [
+        "global"
+      ],
+      "platforms": [
+        "all"
+      ],
+      "topics": [
+        "own-data",
+        "product",
+        "financials"
+      ],
+      "group": "自有运营与渠道",
+      "limitations": "用户提供的真实成本、任务、试玩、代码和经营导出；分享范围随材料",
+      "verification": "file_import",
+      "checked_on": null,
+      "access_modes": [
+        "FILE_IMPORT"
+      ],
+      "connector_status": "not_connected",
+      "automated_adapter": false
+    }
+  ]
+}

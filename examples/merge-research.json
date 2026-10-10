@@ -1,0 +1,34 @@
+{
+  "id": "merge-research-format-example",
+  "example_only": true,
+  "title": "Merge／社区方向 · 研究材料接入示例",
+  "question": "在形成立项判断前，还需要哪些可比市场与自身资源证据？",
+  "scope": {
+    "platform": "待项目资料确认",
+    "region": "待确认",
+    "period": "待确认"
+  },
+  "claims": [
+    {
+      "id": "C-REVENUE",
+      "statement": "候选竞品在目标地区的可比收入",
+      "kind": "estimate",
+      "value": null,
+      "unit": "待统一币种与收入口径",
+      "period": "待确认",
+      "scope": "待确认商店和渠道",
+      "source_ids": [],
+      "evidence": [],
+      "unknown_reason": "当前示例没有提供实际竞品导出，不能由模板产生流水。"
+    }
+  ],
+  "recommendation": {
+    "status": "proposed",
+    "text": "先收取已有工程/策划、团队容量与一份可用竞品导出；本示例不做商业 GO 判断。"
+  },
+  "unknowns": [
+    "试点平台与地区",
+    "现有资源和成本",
+    "竞品集合与同口径数据"
+  ]
+}
