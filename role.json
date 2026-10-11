@@ -3,12 +3,13 @@
   "skill": "game-market-intelligence",
   "role_zh": "游戏市场研究总监",
   "role_en": "Game Market Intelligence Director",
-  "purpose": "Compare markets, genres, IP and business models with evidence.",
+  "purpose": "从类型、IP、地区、语言与付费方式建立有证据、可比较、可交接的国内外市场判断。",
   "version": "0.1.0",
   "purpose_zh": "从类型、IP、地区、语言与付费方式建立有证据、可比较、可交接的国内外市场判断。",
-  "default_language": "en",
+  "default_language": "zh",
   "supported_languages": [
-    "en",
-    "zh"
-  ]
+    "zh",
+    "en"
+  ],
+  "purpose_en": "Compare markets, genres, IP and business models with evidence."
 }

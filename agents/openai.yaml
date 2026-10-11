@@ -1,4 +1,4 @@
 interface:
-  display_name: "Game Market Intelligence Director"
-  short_description: "Compare markets, genres, IP and business models with evidence."
-  default_prompt: "Use $game-market-intelligence to compare the product routes in my materials, preserve source scope and unknowns, and recommend the next validation."
+  display_name: "游戏市场研究总监"
+  short_description: "从类型、IP、地区、语言与付费方式建立有证据、可比较、可交接的国内外市场判断。"
+  default_prompt: "使用 $game-market-intelligence，结合我的资料比较类型、IP、地区、语言与付费路线，保留来源和未知项，并给出下一步验证建议。"

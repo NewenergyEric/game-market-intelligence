@@ -1,12 +1,10 @@
-[中文](ROADMAP.zh.md)
+# 下一步与验收
 
-# Verified scope and next work
+首版已有：岗位 Skill、79 个来源／资料入口、按问题检索、研究包结构检查、同源 HTML／Markdown 报告，以及一份可公开复核的 Merge＋社区真实案例。
 
-Available: role Skill, 79 source entries, catalog search, package validation, HTML/Markdown reports, a public Merge revenue case and a three-product comparison across genre, IP, region, language, payment and capacity.
+1. **已完成：** 用公开资料跑通 Merge／社区研究，保留来源、口径、估算边界和下一次验证。凭据见 [`case-studies/merge-community-public-signals/`](case-studies/merge-community-public-signals/)。
+2. 按现有账号先接一种平台导出或 API；字段、权限、缺失/限流和来源链有实际样例。完成凭据：真实导入与失败路径，不能只增加网址。
+3. 补可复算成本情景、对比图与 PDF 导出自动化；采用实际团队资源，不填伪精确成功率。
+4. 用第二个研究问题验证迁移；保留旧报告和决定版本。
 
-1. Completed: [Merge public signals](case-studies/merge-community-public-signals/) and [cross-route comparison](case-studies/cross-market-entry/), preserving scope and gaps.
-2. Connect one actual authorized export/API, with real import, field, quota, failure and lineage evidence. Adding a URL is not a connector.
-3. Add cost/capacity scenarios from a real team, and automate PDF export if needed.
-4. Validate transfer to another producer's real decision and retain prior report/decision versions.
-
-Paid-platform connectors are not all implemented. Catalog candidate/limited entries require task-specific verification; no private commercial-project report is included.
+当前没有全部付费平台的自动连接器，也没有公开任何真实商业项目原始报告。目录的 candidate／limited 条目需按研究任务验证。

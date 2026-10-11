@@ -1,6 +1,6 @@
 # 把一个方向拆成六个会改变决定的视角
 
-[English](README.md)
+[English](README.en.md)
 
 **制作人的问题：** “社区体验还能怎样做？手游 Merge、授权 IP 社交和 PC 买断，应该用什么标准比较？先测英语、日语还是简中？”
 
@@ -33,11 +33,11 @@
 - [MONOPOLY GO! · Google Play](https://play.google.com/store/apps/details?gl=US&hl=en_US&id=com.scopely.monopolygo)
 - [Stardew Valley · Steam Italy / English](https://store.steampowered.com/app/413150/Stardew_Valley/?cc=it&l=english)
 
-[report.json](report.zh.json) · [comparison.csv](comparison.zh.csv)
+[report.json](report.json) · [comparison.csv](comparison.csv)
 
 ```sh
 python scripts/intelligence.py validate case-studies/cross-market-entry/report.json
 python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market-entry
 ```
 
-输出报告、矩阵和底稿；建议保持 proposed。旧的 [Merge 收入下钻](../merge-community-public-signals/README.zh.md)仍可结合使用。
+输出报告、矩阵和底稿；建议保持 proposed。旧的 [Merge 收入下钻](../merge-community-public-signals/README.md)仍可结合使用。

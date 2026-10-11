@@ -4,7 +4,7 @@
 
 按研究问题选源；列表可用 CLI 按地区、平台和 topic 检索。`entry_checked` = 核读过官方入口；`limited` = 登录/JS/读取受限；`candidate` = 保留候选待核；`file_import` = 用户资料。商业账户与接口均需另做实际接入验证。
 
-机器清单：[sources.json](../data/sources.json)。口径说明：[research-method.md](research-method.zh.md)。所有链接指向对应官方或原发布入口；具体报告应再引用条目原文。
+机器清单：[sources.json](../data/sources.json)。口径说明：[research-method.md](research-method.md)。所有链接指向对应官方或原发布入口；具体报告应再引用条目原文。
 
 ## 单款与竞争情报
 

@@ -1,6 +1,6 @@
 # Merge＋社区公开信号研究
 
-[English](README.md) · [机器可读底稿](report.zh.json) · [英文看板](dashboard-en.png)
+[English](README.en.md) · [机器可读底稿](report.json) · [英文看板](dashboard-en.png)
 
 [![Merge＋社区公开信号看板](dashboard-zh.png)](dashboard-zh.png)
 

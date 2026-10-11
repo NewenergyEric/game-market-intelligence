@@ -1,6 +1,6 @@
 # Agent 使用说明 · game-market-intelligence
 
-[English](AGENT-GUIDE.md)
+[English](AGENT-GUIDE.en.md)
 
 ## 入口与读取顺序
 
@@ -32,7 +32,7 @@
 
 ## 深度案例入口
 
-[Protocol](../references/market-lenses.zh.md) · [Case](../case-studies/cross-market-entry/README.zh.md)
+[Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.md)
 
 ```sh
 python scripts/intelligence.py validate case-studies/cross-market-entry/report.json

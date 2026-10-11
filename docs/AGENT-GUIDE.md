@@ -1,34 +1,36 @@
-# Agent Guide · game-market-intelligence
+# Agent 使用说明 · game-market-intelligence
 
-[中文](AGENT-GUIDE.zh.md)
+[English](AGENT-GUIDE.en.md)
 
-## Read order
+## 入口与读取顺序
 
-Read `SKILL.md` first, then open `references/research-method.md`, `references/source-catalog.md`, and `data/sources.json` as needed. Call `scripts/intelligence.py` only when routing sources, validating input, or rendering a report.
+先读 `SKILL.md`，再按问题读取 `references/research-method.md`、`references/source-catalog.md` 和 `data/sources.json`。只有需要渲染报告时才调用 `scripts/intelligence.py`。
 
-## Standard workflow
+## 标准工作流
 
-1. Extract platform, region, subject, period, metrics, decision, and evidence budget.
-2. Route sources and record access state, independence, lineage, and limits.
-3. Keep facts, estimates, inferences, recommendations, and unknowns separate in the input JSON.
-4. Run `validate`, then `report` to create HTML, Markdown, and the preserved JSON.
-5. Return a decision summary, evidence chain, risks, next validation, and handoff questions.
+1. 从请求提取平台、地区、对象、时间窗、指标、决策和证据预算。
+2. 用 `sources` 路由来源，并记录每个来源的访问状态、独立性和限制。
+3. 将事实、估算、推断、建议和未知分开写入输入 JSON。
+4. 用 `validate` 检查必需字段，再用 `report` 生成 HTML、Markdown 和原 JSON。
+5. 输出决定摘要、证据链、风险、下一步验证与交接问题。
 
-## Failure branches
+## 失败分支
 
-- Account or API unavailable: use a public page or user export and record the access gap.
-- Sources share upstream data: document lineage and do not double-count them.
-- Estimate has no method: preserve the estimate label and limit; do not promote it to fact.
-- Critical field missing: return `null`, a reason, and a collection path.
-- Finding changes project scope: stop at accountable-lead confirmation before production handoff.
+- 如果账号/API 无法访问 → 使用公开页面或用户导出，并将 `access_gap` 写入报告；不要声称自动采集成功。
+- 如果多个来源重复上游数据 → 标记数据血缘，禁止重复计权。
+- 如果只有估算没有方法 → 保留估算标签和限制，不升级为确认事实。
+- 如果关键字段缺失 → 输出 `null`、缺口和补数方法，不用常识补齐。
+- 如果结论会改变立项范围 → 停在负责人确认点，交给项目经理，不自动改需求。
 
-## Output contract
+## 输出契约
 
-At minimum include `decision_summary`, `evidence`, `risks`, `next_validation`, and `handoff_questions`. Every citation needs source, business date, collection time, region/platform, metric definition, and coverage gap.
+最少包含 `decision_summary`、`evidence`、`risks`、`next_validation` 和 `handoff_questions`。引用必须带来源、业务日期、采集时间、地区/平台、指标定义和覆盖缺口。
 
-Do not present the catalog as connected APIs, ratings as revenue, Steam activity as sales, company financials as title-level revenue, or a market proposal as an approved production task.
+## 不要做
 
-## Depth-case entry
+不要把来源目录当作已连接 API；不要把 Metacritic 评分当收入；不要把 SteamDB 活跃曲线当销量；不要把公司财报摊成单款流水；不要把市场建议直接当制作任务。
+
+## 深度案例入口
 
 [Protocol](../references/market-lenses.md) · [Case](../case-studies/cross-market-entry/README.md)
 
@@ -37,6 +39,6 @@ python scripts/intelligence.py validate case-studies/cross-market-entry/report.j
 python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market
 ```
 
-## Tool input schema
+## 工具输入格式
 
-The output contract above describes human-facing report content, not the JSON schema accepted by intelligence.py. CLI fields are id, title, question, scope, claims, recommendation and unknowns, with optional comparison. Each comparison cell references claims through claim_ids. Use case-studies/cross-market-entry/report.json as the executable example; do not substitute report section names such as decision_summary for CLI fields.
+上面的输出契约描述面向人的报告内容，不是 intelligence.py 接收的 JSON schema。CLI 输入字段为 id、title、question、scope、claims、recommendation、unknowns，可选 comparison。每个比较单元以 claim_ids 指向 claims；以 case-studies/cross-market-entry/report.json 为可运行范本，不把 decision_summary 等报告栏目直接当作 CLI 字段。
