@@ -33,8 +33,11 @@ class IntelligenceTests(unittest.TestCase):
             result=json.loads((out/'report.json').read_text(encoding='utf-8'))
             self.assertIsNone(result['claims'][0]['value'])
             page=(out/'report.html').read_text(encoding='utf-8')
-            self.assertIn('Unknown: ',page)
+            self.assertIn('未知：',page)
             self.assertIn(self.data['claims'][0]['unknown_reason'],page)
+            english=Path(directory)/'report-en';module.render(self.data,english,'en')
+            self.assertIn('Unknown: ',(english/'report.html').read_text(encoding='utf-8'))
+            self.assertEqual(json.loads((english/'report.json').read_text(encoding='utf-8')),result)
     def test_stated_revenue_needs_specific_evidence(self):
         self.data['claims'][0]['value']=123
         self.assertTrue(module.validate(self.data))

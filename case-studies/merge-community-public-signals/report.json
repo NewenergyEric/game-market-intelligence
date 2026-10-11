@@ -1,8 +1,8 @@
 {
   "id": "merge-community-public-signals-20261010",
-  "title": "Merge + Community Direction — Public Market Signals",
+  "title": "Merge＋社区方向 · 公开市场信号研究",
   "title_en": "Merge + Community Direction — Public Market Signals",
-  "question": "Do public market signals support a greenlight or only another validation round?",
+  "question": "公开市场信号是否足以支持直接立项，还是只支持下一轮验证？",
   "question_en": "Do public market signals support a greenlight or only another validation round?",
   "scope": {
     "platform": "mobile",
@@ -12,7 +12,7 @@
   "claims": [
     {
       "id": "C-MERGE-SHARE",
-      "statement": "Merge share of Puzzle IAP revenue",
+      "statement": "Merge 占益智品类 IAP 收入份额",
       "statement_en": "Merge share of Puzzle IAP revenue",
       "kind": "estimate",
       "value": 20,
@@ -27,12 +27,11 @@
           "locator": "pp. 39–40",
           "note": "Report attributes underlying estimates to AppMagic; 14% in 2024 and 20% in 2025."
         }
-      ],
-      "statement_zh": "Merge 占益智品类 IAP 收入份额"
+      ]
     },
     {
       "id": "C-MERGE-CONCENTRATION",
-      "statement": "Top-ten Merge revenue concentration",
+      "statement": "Merge 前十产品收入集中度",
       "statement_en": "Top-ten Merge revenue concentration",
       "kind": "estimate",
       "value": 80,
@@ -47,12 +46,11 @@
           "locator": "pp. 39–40",
           "note": "Top ten titles held nearly 80% of segment revenue."
         }
-      ],
-      "statement_zh": "Merge 前十产品收入集中度"
+      ]
     },
     {
       "id": "C-GH-REVENUE",
-      "statement": "Estimated annual revenue for Gossip Harbor",
+      "statement": "Gossip Harbor 估算年收入",
       "statement_en": "Estimated annual revenue for Gossip Harbor",
       "kind": "estimate",
       "value": 550,
@@ -67,12 +65,11 @@
           "locator": "p. 41",
           "note": "Estimated $550M and 33% of Merge segment revenue."
         }
-      ],
-      "statement_zh": "Gossip Harbor 估算年收入"
+      ]
     },
     {
       "id": "C-GH-STORE",
-      "statement": "Gossip Harbor Google Play download band",
+      "statement": "Gossip Harbor Google Play 下载量级",
       "statement_en": "Gossip Harbor Google Play download band",
       "kind": "observed",
       "value": 50,
@@ -87,12 +84,11 @@
           "url": "https://play.google.com/store/apps/details?hl=en-US&id=com.mergegames.gossipharbor",
           "note": "Store displayed 50M+ downloads, 4.3 rating, 713K headline reviews, and #2 top grossing puzzle."
         }
-      ],
-      "statement_zh": "Gossip Harbor Google Play 下载量级"
+      ]
     },
     {
       "id": "C-MM-LIFETIME",
-      "statement": "Merge Mansion lifetime revenue",
+      "statement": "Merge Mansion 生命周期收入",
       "statement_en": "Merge Mansion lifetime revenue",
       "kind": "observed",
       "value": 800,
@@ -107,34 +103,24 @@
           "url": "https://metacoregames.com/news/metacore-appoints-jose-saarniniemi-as-general-manager-of-merge-mansion",
           "note": "Metacore disclosed more than $800M lifetime revenue and more than 65M global downloads."
         }
-      ],
-      "statement_zh": "Merge Mansion 生命周期收入"
+      ]
     }
   ],
   "recommendation": {
     "status": "proposed",
-    "text": "Prototype a narrow, story-first community wedge and validate tutorial completion, D1/D7, story-unlock conversion, and the energy pinch.",
-    "text_en": "Prototype a narrow, story-first community wedge and validate tutorial completion, D1/D7, story-unlock conversion, and the energy pinch.",
-    "text_zh": "先做一个剧情优先、社区关系可见的窄原型，并验证教程完成率、D1／D7、剧情解锁转化和体力卡点。"
+    "text": "先做一个剧情优先、社区关系可见的窄原型，并验证教程完成率、D1／D7、剧情解锁转化和体力卡点。",
+    "text_en": "Prototype a narrow, story-first community wedge and validate tutorial completion, D1/D7, story-unlock conversion, and the energy pinch."
   },
   "unknowns": [
-    "Target-market CPI and creative efficiency",
-    "Our D1/D7, LTV, and payer structure",
-    "Verified content and LiveOps capacity",
-    "Revenue contribution from webshops, ads, and Chinese Android channels"
+    "目标地区 CPI 与素材效率",
+    "我方 D1／D7、LTV 与付费结构",
+    "团队在内容与 LiveOps 上的真实产能",
+    "网页商店、广告和中国 Android 渠道对收入的影响"
   ],
   "unknowns_en": [
     "Target-market CPI and creative efficiency",
     "Our D1/D7, LTV, and payer structure",
     "Verified content and LiveOps capacity",
     "Revenue contribution from webshops, ads, and Chinese Android channels"
-  ],
-  "title_zh": "Merge＋社区方向 · 公开市场信号研究",
-  "question_zh": "公开市场信号是否足以支持直接立项，还是只支持下一轮验证？",
-  "unknowns_zh": [
-    "目标地区 CPI 与素材效率",
-    "我方 D1／D7、LTV 与付费结构",
-    "团队在内容与 LiveOps 上的真实产能",
-    "网页商店、广告和中国 Android 渠道对收入的影响"
   ]
 }

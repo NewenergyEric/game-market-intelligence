@@ -26,6 +26,8 @@ Separate product capability from commercial performance; assign CPI/LTV, IP term
 
 79 domestic and international source entries are not 79 connected APIs. Title estimates, company segments and storefront observations retain their own scope. Language support is not regional revenue; a licensed competitor IP does not grant us usage rights. This case contains no ad experiment or unavailable paid data.
 
-[Reproducible case](../case-studies/cross-market-entry/README.md)
+[Reproducible case](../case-studies/cross-market-entry/README.en.md)
 
-[Agent guide](AGENT-GUIDE.md)
+[Agent guide](AGENT-GUIDE.en.md)
+
+Chinese is the primary entry; this English guide remains available. For report/SOW exports, `--lang en` selects English labels while preserving the supplied record text.

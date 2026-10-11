@@ -1,4 +1,4 @@
-[English](README.md)
+[English](README.en.md)
 
 # 游戏市场研究总监
 
@@ -43,11 +43,11 @@ npx skills add https://github.com/NewenergyEric/game-market-intelligence
 
 **真实公开研究：Gossip Harbor、MONOPOLY GO!、Stardew Valley。** 三款产品 × 六个比较维度，18 个带证据 ID 的单元；覆盖类型、IP、地区、语言、付费与产能。保留原 Merge 行业案例，新增跨类型比较。
 
-[完整分析与可下载底稿](case-studies/cross-market-entry/README.zh.md)
+[完整分析与可下载底稿](case-studies/cross-market-entry/README.md)
 
 [![游戏市场研究总监](case-studies/cross-market-entry/dashboard-zh.png?v=depth-v4)](case-studies/cross-market-entry/dashboard-zh.png)
 
-[继续看 Merge 行业的收入、增长与集中度案例](case-studies/merge-community-public-signals/README.zh.md)
+[继续看 Merge 行业的收入、增长与集中度案例](case-studies/merge-community-public-signals/README.md)
 
 ## 最后交给团队什么
 
@@ -62,7 +62,7 @@ npx skills add https://github.com/NewenergyEric/game-market-intelligence
 
 核心工具使用 Python 3.10+ 标准库；动画源码是可选的 Remotion 工程。
 
-[人类说明书](docs/HUMAN-GUIDE.zh.md) · [Agent guide](docs/AGENT-GUIDE.zh.md) · [SKILL.md](SKILL.zh.md) · [Tests and review](evals/) · [Motion source](motion/README.md)
+[人类说明书](docs/HUMAN-GUIDE.md) · [Agent guide](docs/AGENT-GUIDE.md) · [SKILL.md](SKILL.md) · [Tests and review](evals/) · [Motion source](motion/README.md)
 
 ```sh
 python -m unittest discover -s tests -v
@@ -77,6 +77,6 @@ python scripts/check_presentation.py
 
 个人制作者可以轮流承担四个岗位；团队通过同一份资料交接：什么值得做、竞对做了什么、资源和体量如何评估，以及如何创作自己的核心美术。
 
-[岗位如何交接证据、范围与美术资产](docs/WORKFLOW.zh.md) · [Art Director](https://github.com/NewenergyEric/art-director-skill)
+[岗位如何交接证据、范围与美术资产](docs/WORKFLOW.md) · [Art Director](https://github.com/NewenergyEric/art-director-skill)
 
 ![市场研究、竞品拆解、项目评估与核心美术创作；样板与成本反馈推动前序决定修订。](assets/readme/workflow-zh.png)

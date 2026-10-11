@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Market Intelligence Director"
+  short_description: "Compare markets, genres, IP and business models with evidence."
+  default_prompt: "Use $game-market-intelligence to compare the product routes in my materials, preserve source scope and unknowns, and recommend the next validation."

@@ -92,7 +92,17 @@ def validate(data, sources=None):
     return errors
 
 
-def render(data, out):
+def render(data, out, language='zh'):
+    if language not in ('zh', 'en'):
+        raise ValueError('language must be zh or en')
+    labels = {'Scope': '范围', 'Recommendation': '建议', 'Evidence and findings': '证据与结论',
+              'Unknown: ': '未知：', 'Evidence': '依据', 'Open validation': '待验证',
+              'Product / lens': '产品 / 比较维度', 'Cross-lens comparison': '多视角比较',
+              'Finding': '结论', 'Kind': '性质', 'Value / gap': '值 / 缺口',
+              'Business period': '业务期间', 'Evidence location': '具体证据',
+              'This report renders the supplied evidence. Missing metrics are not invented. Use browser print to save a PDF.':
+              '本报告仅呈现输入底稿；未取得的指标未自动补齐。可通过浏览器打印保存 PDF。'}
+    t = lambda label: labels.get(label, label) if language == 'zh' else label
     errors = validate(data)
     if errors:
         raise ValueError('; '.join(errors))
@@ -100,11 +110,11 @@ def render(data, out):
     esc = lambda value: html.escape(str(value), quote=True)
     rows = []
     md = [f"# {data['title']}", '', data['question'], '',
-          '**Scope:** ' + json.dumps(data['scope'], ensure_ascii=False), '',
-          '**Recommendation (' + data['recommendation']['status'] + '):** ' + data['recommendation'].get('text', ''), '',
-          '## Evidence and findings', '']
+          f"**{t('Scope')}:** " + json.dumps(data['scope'], ensure_ascii=False), '',
+          f"**{t('Recommendation')} (" + data['recommendation']['status'] + '):** ' + data['recommendation'].get('text', ''), '',
+          '## ' + t('Evidence and findings'), '']
     for c in data['claims']:
-        value = 'Unknown: ' + c['unknown_reason'] if c['value'] is None else str(c['value']) + ' ' + str(c['unit'])
+        value = t('Unknown: ') + c['unknown_reason'] if c['value'] is None else str(c['value']) + ' ' + str(c['unit'])
         evidence = json.dumps(c['evidence'], ensure_ascii=False)
         links=[]
         for entry in c['evidence'] if isinstance(c['evidence'], list) else []:
@@ -112,18 +122,18 @@ def render(data, out):
                 links.append('<a href="'+esc(entry['url'])+'">'+esc(urlsplit(entry['url']).netloc)+'</a><br><small>'+esc(entry.get('locator',''))+'</small>')
         citation='<br>'.join(links) if links else esc(evidence)
         rows.append('<tr>' + ''.join(f'<td>{esc(v)}</td>' for v in [c['id'], c['statement'], c['kind'], value, c['period']]) + '<td>'+citation+'</td></tr>')
-        md += [f"- **{c['id']} · {c['statement']}**：{value}（{c['kind']}，{c['period']}）", f'  Evidence: {evidence}', '']
-    md += ['## Open validation', ''] + ['- ' + str(u) for u in data['unknowns']]
+        md += [f"- **{c['id']} · {c['statement']}**：{value}（{c['kind']}，{c['period']}）", f"  {t('Evidence')}: {evidence}", '']
+    md += ['## ' + t('Open validation'), ''] + ['- ' + str(u) for u in data['unknowns']]
     matrix = ''
     if data.get('comparison'):
         comparison = data['comparison']
         axes = comparison['axes']
-        header = '<th>Product / lens</th>' + ''.join('<th>' + esc(a['label']) + '</th>' for a in axes)
+        header = '<th>' + t('Product / lens') + '</th>' + ''.join('<th>' + esc(a['label']) + '</th>' for a in axes)
         matrix_rows = []
         with (out / 'comparison.csv').open('w', encoding='utf-8-sig', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(['product_id', 'product', 'axis', 'value', 'value_en', 'claim_ids'])
-            md += ['', '## Cross-lens comparison', '']
+            md += ['', '## ' + t('Cross-lens comparison'), '']
             for product in comparison['products']:
                 cells = []
                 md += ['### ' + product['name'], '']
@@ -134,14 +144,14 @@ def render(data, out):
                     writer.writerow([product['id'], product['name'], axis['id'], cell['text'], cell.get('text_en', ''), refs])
                     md.append(f"- **{axis['label']}**：{cell['text']} · {refs}")
                 matrix_rows.append('<tr><th>' + esc(product['name']) + '</th>' + ''.join(cells) + '</tr>')
-        matrix = '<h2>Cross-lens comparison</h2><div class="scroll"><table><thead><tr>' + header + '</tr></thead><tbody>' + ''.join(matrix_rows) + '</tbody></table></div>'
-    page = f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        matrix = '<h2>' + t('Cross-lens comparison') + '</h2><div class="scroll"><table><thead><tr>' + header + '</tr></thead><tbody>' + ''.join(matrix_rows) + '</tbody></table></div>'
+    page = f'''<!doctype html><html lang="{'zh-CN' if language == 'zh' else 'en'}"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(data['title'])}</title><style>body{{max-width:1160px;margin:40px auto;padding:0 24px;font:16px/1.75 system-ui;color:#14374b;background:#f5f9fb}}h1{{line-height:1.2;background:#001f3f;color:#f5f9fb;padding:32px;margin:0 -24px 28px;letter-spacing:-1px}}a{{color:#007d86;text-underline-offset:4px}}h2{{color:#007d86}}small{{font-size:12px;color:#486674}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{padding:12px;border:0;border-bottom:1px solid #c6d7dc;text-align:left;vertical-align:top;overflow-wrap:anywhere}}.scroll{{overflow:auto}}.note{{background:#dfeded;border-left:3px solid #007d86;padding:18px}}@media print{{body{{margin:0;background:white;font-size:11pt}}tr{{break-inside:avoid}}}}</style>
-<h1>{esc(data['title'])}</h1><p>{esc(data['question'])}</p><p>Scope: {esc(json.dumps(data['scope'],ensure_ascii=False))}</p>
-<div class="note"><b>Recommendation · {esc(data['recommendation']['status'])}</b><p>{esc(data['recommendation'].get('text',''))}</p></div>
-{matrix}<h2>Evidence and findings</h2><div class="scroll"><table><thead><tr><th>ID</th><th>Finding</th><th>Kind</th><th>Value / gap</th><th>Business period</th><th>Evidence location</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-<h2>Open validation</h2><ul>{''.join('<li>'+esc(u)+'</li>' for u in data['unknowns'])}</ul>
-<p>This report renders the supplied evidence. Missing metrics are not invented. Use browser print to save a PDF.</p></html>'''
+<h1>{esc(data['title'])}</h1><p>{esc(data['question'])}</p><p>{t('Scope')}: {esc(json.dumps(data['scope'],ensure_ascii=False))}</p>
+<div class="note"><b>{t('Recommendation')} · {esc(data['recommendation']['status'])}</b><p>{esc(data['recommendation'].get('text',''))}</p></div>
+{matrix}<h2>{t('Evidence and findings')}</h2><div class="scroll"><table><thead><tr><th>ID</th><th>{t('Finding')}</th><th>{t('Kind')}</th><th>{t('Value / gap')}</th><th>{t('Business period')}</th><th>{t('Evidence location')}</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<h2>{t('Open validation')}</h2><ul>{''.join('<li>'+esc(u)+'</li>' for u in data['unknowns'])}</ul>
+<p>{t('This report renders the supplied evidence. Missing metrics are not invented. Use browser print to save a PDF.')}</p></html>'''
     (out / 'report.html').write_text(page, encoding='utf-8')
     (out / 'report.md').write_text('\n'.join(md) + '\n', encoding='utf-8')
     (out / 'report.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -154,7 +164,9 @@ def main():
     q.add_argument('--topic'); q.add_argument('--region'); q.add_argument('--platform')
     for name in ['validate', 'report']:
         p = commands.add_parser(name); p.add_argument('input', type=Path)
-        if name == 'report': p.add_argument('--out', type=Path, required=True)
+        if name == 'report':
+            p.add_argument('--out', type=Path, required=True)
+            p.add_argument('--lang', choices=['zh', 'en'], default='zh', help='Report labels; input narrative is preserved (default: zh)')
     args = parser.parse_args()
     try:
         if args.command == 'sources':
@@ -164,7 +176,7 @@ def main():
         errors = validate(data)
         if errors:
             print(json.dumps({'valid': False, 'errors': errors}, ensure_ascii=False)); return 1
-        if args.command == 'report': render(data, args.out)
+        if args.command == 'report': render(data, args.out, args.lang)
         print(json.dumps({'valid': True, 'output': str(args.out) if args.command == 'report' else None}, ensure_ascii=False)); return 0
     except (OSError, ValueError, TypeError, KeyError) as exc:
         print(json.dumps({'error': str(exc)}, ensure_ascii=False)); return 1

@@ -5,17 +5,19 @@ description: 为游戏立项、品类/IP选择、地区与语言进入、付费�
 
 # 游戏市场研究总监
 
+默认以中文沟通和交付，英文作为辅助版本；用户明确指定语言时遵循其选择。
+
 把制作人的经营问题转成研究范围、证据和可执行的验证建议。保留既有项目方向；不是每次研究都重新立项。
 
 ## 开始工作
 
 从材料识别平台（手游/PC/主机/小游戏）、地区、单款/品类/公司/行业、时间窗、待支持的决定、资源约束。只询问影响当前结论的缺项。已有方向可先做范围受限报告。
 
-Merge/社区是已有试点，不是默认市场范围。按实际问题选研究视角：类型与核心循环、玩家动机、IP与授权条件、地区与渠道、语言与本地化、付费模式与单位经济、获客与内容运营、团队供给能力。进入新市场或比较商业路线时，读 [多视角研究与交叉判断](references/market-lenses.zh.md)。
+Merge/社区是已有试点，不是默认市场范围。按实际问题选研究视角：类型与核心循环、玩家动机、IP与授权条件、地区与渠道、语言与本地化、付费模式与单位经济、获客与内容运营、团队供给能力。进入新市场或比较商业路线时，读 [多视角研究与交叉判断](references/market-lenses.md)。
 
 先确定比较单位，例如“日本 Android、日文、2026 Q3、新增用户、IAP 净收入”，再比较竞品。给出至少一条会改变决策的交叉判断和其反证方法；不要把视角清单当研究结果。没有地区收入时，语言支持、评论语言和全球榜单不能代替地区需求。
 
-使用 `python scripts/intelligence.py sources --topic revenue --region china --platform mobile` 查来源；换 topic 可查 `market / financials / engagement / ads / sentiment / product / own-data / regulation`。完整入口和当前核实程度见 [来源目录](references/source-catalog.zh.md)，机器清单为 `data/sources.json`。
+使用 `python scripts/intelligence.py sources --topic revenue --region china --platform mobile` 查来源；换 topic 可查 `market / financials / engagement / ads / sentiment / product / own-data / regulation`。完整入口和当前核实程度见 [来源目录](references/source-catalog.md)，机器清单为 `data/sources.json`。
 
 按问题选择一手披露、第三方估算、行为观察和我方数据；账号/API 未验证时，使用可用网页或用户导出，并记录缺口。目录收录不表示已付费、已取得访问权或已接通自动采集。
 
@@ -25,7 +27,7 @@ Merge/社区是已有试点，不是默认市场范围。按实际问题选研�
 - 单款第三方流水标为 estimate；财报按实际公司/分部披露，不能自行摊到单款。国内 Android 未覆盖渠道明确列出，不用 iOS 倍数补全后冒充实际值。
 - SteamDB 的活跃/历史信息、Metacritic 的评价各按用途使用；评价、榜单、广告素材量均不直接等于销量、利润或 ROAS。
 - 检查相同上游/转载/公司归属，独立性按实际数据链判断。data.ai 作为 Sensor Tower 的历史别名；不把同一份历史数据重复计入。
-- 未知值用 null 和原因，估算与事实分开。没有验证方法不提供伪精确“成功率”。细节见 [研究口径](references/research-method.zh.md)。
+- 未知值用 null 和原因，估算与事实分开。没有验证方法不提供伪精确“成功率”。细节见 [研究口径](references/research-method.md)。
 
 报告先给决定摘要、重要风险和下一笔验证，再给比较、情景和底稿。核心字段使用 [输入示例](examples/merge-research.json) 的格式；这是格式案例，不是市场调查实绩。
 

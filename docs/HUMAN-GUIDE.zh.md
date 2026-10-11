@@ -1,4 +1,4 @@
-[English](HUMAN-GUIDE.md)
+[English](HUMAN-GUIDE.en.md)
 
 # 游戏市场研究总监 · 使用说明
 
@@ -26,6 +26,8 @@
 
 79 个国内外数据源入口不等于 79 个已连接 API。单款估算、财报分部、商店观察分别保留口径；语言不等于地区收入，授权 IP 不等于获得我方使用权。公开比较不包含投放实验或未取得的付费数据。
 
-[可复现案例](../case-studies/cross-market-entry/README.zh.md)
+[可复现案例](../case-studies/cross-market-entry/README.md)
 
-[Agent guide](AGENT-GUIDE.zh.md)
+[Agent guide](AGENT-GUIDE.md)
+
+默认入口、展示媒体与导出标题使用中文，英文材料通过 `.en.md` / `.en.json` 访问。报告或 SOW 导出可加 `--lang en` 使用英文标题；正文使用所选输入底稿，不自动翻译来源。

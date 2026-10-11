@@ -1,31 +1,33 @@
-[中文](HUMAN-GUIDE.zh.md)
+[English](HUMAN-GUIDE.en.md)
 
-# Game Market Intelligence Director · Human guide
+# 游戏市场研究总监 · 使用说明
 
-A market decision connects audience and genre with IP, regional channels, culture, payment, competition and team capacity. This Skill guides your agent through evidence-backed comparisons and turns critical gaps into concrete research tasks.
+决定一个游戏怎么进入市场，要把玩家与玩法、IP、地区渠道、语言文化、付费方式、竞争和团队产能放在一起看。这个 Skill 引导 Agent 建比较底稿，保留证据，再把关键缺口变成验证任务。
 
-## Compare product routes
+## 跨类型选择
 
-> Our team knows community storytelling. Compare Merge mobile, IP-led social and paid simulation: audience, revenue model and content workload.
+> 我们擅长社区叙事。比较 Merge 手游、IP 社交和买断模拟：各自适合谁、靠什么收入、对内容产能要求如何？
 
-Receive a six-axis comparison with sources, differences and open questions; no cross-platform revenue ranking.
+得到六维对照、可核对来源、差异与缺口；不会把跨平台收入直接排成名次。
 
-## Enter a new region
+## 进入新地区
 
-> What should we validate for Japan, North America and Brazil: language, payment, distribution, culture and competitors?
+> 同一玩法进日本、北美、巴西，语言、支付、渠道、文化适配和竞争分别要验证什么？
 
-Build a regional research plan and evidence table. Unavailable paid data and local metrics remain explicitly unknown.
+按地区建立研究计划与证据表。付费数据库或本地指标不可用时，明确标为未知。
 
-## Turn observations into tests
+## 从观察到下一轮实验
 
-> What does support for 12 languages establish? What evidence is still missing before greenlighting?
+> 支持 12 种语言能说明什么？我们还缺哪些证据才适合立项？
 
-Separate product capability from commercial performance; assign CPI/LTV, IP terms and localization capacity research to accountable roles.
+区分语言能力与市场表现，把 CPI/LTV、IP 条款、内容与本地化产能交给对应负责人验证。
 
-## Review and handoff
+## 复核与交接
 
-79 domestic and international source entries are not 79 connected APIs. Title estimates, company segments and storefront observations retain their own scope. Language support is not regional revenue; a licensed competitor IP does not grant us usage rights. This case contains no ad experiment or unavailable paid data.
+79 个国内外数据源入口不等于 79 个已连接 API。单款估算、财报分部、商店观察分别保留口径；语言不等于地区收入，授权 IP 不等于获得我方使用权。公开比较不包含投放实验或未取得的付费数据。
 
-[Reproducible case](../case-studies/cross-market-entry/README.md)
+[可复现案例](../case-studies/cross-market-entry/README.md)
 
 [Agent guide](AGENT-GUIDE.md)
+
+默认入口、展示媒体与导出标题使用中文，英文材料通过 `.en.md` / `.en.json` 访问。报告或 SOW 导出可加 `--lang en` 使用英文标题；正文使用所选输入底稿，不自动翻译来源。

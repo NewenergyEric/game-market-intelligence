@@ -1,6 +1,6 @@
 # Merge + Community Public-Signals Brief
 
-[中文](README.zh.md) · [Machine-readable baseline](report.json) · [Chinese dashboard](dashboard-zh.png)
+[中文](README.zh.md) · [Machine-readable baseline](report.en.json) · [Chinese dashboard](dashboard-zh.png)
 
 [![Merge + community public-signals dashboard](dashboard-en.png)](dashboard-en.png)
 
@@ -29,8 +29,8 @@
 ## Reproduce
 
 ```text
-python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.json
-python scripts/intelligence.py report case-studies/merge-community-public-signals/report.json --out outputs/merge-community-public-signals
+python scripts/intelligence.py validate case-studies/merge-community-public-signals/report.en.json
+python scripts/intelligence.py report case-studies/merge-community-public-signals/report.en.json --out outputs/merge-community-public-signals --lang en
 ```
 
 ## Sources and scope

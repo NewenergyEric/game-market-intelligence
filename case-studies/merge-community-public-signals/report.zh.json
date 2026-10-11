@@ -19,8 +19,15 @@
       "unit": "%",
       "period": "2025",
       "scope": "Worldwide App Store and Google Play IAP; excludes webshops and other revenue",
-      "source_ids": ["investgame-mobile-landscape-2026"],
-      "evidence": [{"locator": "pp. 39–40", "note": "Report attributes underlying estimates to AppMagic; 14% in 2024 and 20% in 2025."}]
+      "source_ids": [
+        "investgame-mobile-landscape-2026"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 39–40",
+          "note": "Report attributes underlying estimates to AppMagic; 14% in 2024 and 20% in 2025."
+        }
+      ]
     },
     {
       "id": "C-MERGE-CONCENTRATION",
@@ -31,8 +38,15 @@
       "unit": "approximately %",
       "period": "2025",
       "scope": "Worldwide App Store and Google Play IAP",
-      "source_ids": ["investgame-mobile-landscape-2026"],
-      "evidence": [{"locator": "pp. 39–40", "note": "Top ten titles held nearly 80% of segment revenue."}]
+      "source_ids": [
+        "investgame-mobile-landscape-2026"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 39–40",
+          "note": "Top ten titles held nearly 80% of segment revenue."
+        }
+      ]
     },
     {
       "id": "C-GH-REVENUE",
@@ -43,8 +57,15 @@
       "unit": "USD million",
       "period": "2025",
       "scope": "Modeled mobile IAP revenue",
-      "source_ids": ["investgame-mobile-landscape-2026"],
-      "evidence": [{"locator": "p. 41", "note": "Estimated $550M and 33% of Merge segment revenue."}]
+      "source_ids": [
+        "investgame-mobile-landscape-2026"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 41",
+          "note": "Estimated $550M and 33% of Merge segment revenue."
+        }
+      ]
     },
     {
       "id": "C-GH-STORE",
@@ -55,8 +76,15 @@
       "unit": "million+ downloads",
       "period": "checked 2026-10-10",
       "scope": "Google Play US-English storefront",
-      "source_ids": ["google-play"],
-      "evidence": [{"url": "https://play.google.com/store/apps/details?hl=en-US&id=com.mergegames.gossipharbor", "note": "Store displayed 50M+ downloads, 4.3 rating, 713K headline reviews, and #2 top grossing puzzle."}]
+      "source_ids": [
+        "google-play"
+      ],
+      "evidence": [
+        {
+          "url": "https://play.google.com/store/apps/details?hl=en-US&id=com.mergegames.gossipharbor",
+          "note": "Store displayed 50M+ downloads, 4.3 rating, 713K headline reviews, and #2 top grossing puzzle."
+        }
+      ]
     },
     {
       "id": "C-MM-LIFETIME",
@@ -67,8 +95,15 @@
       "unit": "USD million+",
       "period": "publisher disclosure dated 2026-06-12",
       "scope": "Lifetime global performance; no region, channel, or annual split",
-      "source_ids": ["metacore-official"],
-      "evidence": [{"url": "https://metacoregames.com/news/metacore-appoints-jose-saarniniemi-as-general-manager-of-merge-mansion", "note": "Metacore disclosed more than $800M lifetime revenue and more than 65M global downloads."}]
+      "source_ids": [
+        "metacore-official"
+      ],
+      "evidence": [
+        {
+          "url": "https://metacoregames.com/news/metacore-appoints-jose-saarniniemi-as-general-manager-of-merge-mansion",
+          "note": "Metacore disclosed more than $800M lifetime revenue and more than 65M global downloads."
+        }
+      ]
     }
   ],
   "recommendation": {

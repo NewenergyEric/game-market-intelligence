@@ -33,11 +33,11 @@ Public-source research performed on 2026-10-11. Cached storefront and original a
 - [MONOPOLY GO! · Google Play](https://play.google.com/store/apps/details?gl=US&hl=en_US&id=com.scopely.monopolygo)
 - [Stardew Valley · Steam Italy / English](https://store.steampowered.com/app/413150/Stardew_Valley/?cc=it&l=english)
 
-[report.json](report.json) · [comparison.csv](comparison.csv)
+[report.json](report.en.json) · [comparison.csv](comparison.en.csv)
 
 ```sh
-python scripts/intelligence.py validate case-studies/cross-market-entry/report.json
-python scripts/intelligence.py report case-studies/cross-market-entry/report.json --out outputs/cross-market-entry
+python scripts/intelligence.py validate case-studies/cross-market-entry/report.en.json
+python scripts/intelligence.py report case-studies/cross-market-entry/report.en.json --out outputs/cross-market-entry --lang en
 ```
 
-Produces the report, comparison matrix and source record. The recommendation remains proposed. Keep the [Merge revenue drill-down](../merge-community-public-signals/README.md) for a narrower question.
+Produces the report, comparison matrix and source record. The recommendation remains proposed. Keep the [Merge revenue drill-down](../merge-community-public-signals/README.en.md) for a narrower question.
