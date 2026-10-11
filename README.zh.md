@@ -1,5 +1,7 @@
 [English](README.en.md)
 
+[**Game Dev Skills**](https://github.com/NewenergyEric/NewenergyEric/blob/main/GAME-DEV-SKILLS.md) · [市场研究](https://github.com/NewenergyEric/game-market-intelligence) · [游戏拆解](https://github.com/NewenergyEric/game-reverse-analyst) · [制作管理](https://github.com/NewenergyEric/game-production-manager) · [美术总监](https://github.com/NewenergyEric/art-director-skill)
+
 # 游戏市场研究总监
 
 ### 看清市场，决定下一步。
@@ -12,6 +14,14 @@
 </picture>
 
 [下载完整介绍 · 24 秒 MP4](assets/readme/hero-zh.mp4?raw=true) · [GIF](assets/readme/hero-zh.gif) · [文字版](assets/readme/transcript-zh.md)
+
+## 为什么做这个
+
+**立项时缺的，常常是把几个方向放在一起判断的依据。**
+
+榜单、商店页、行业报告各说一部分。真正要回答的是：这个类型适合哪些玩家，进入哪个地区，付费方式与内容产能能否匹配。研究应留下来源、差异和下一步要验证的事，让团队能继续判断。
+
+它是 Game Dev Skills 的市场岗位。先缩小值得研究的方向，再把问题交给拆解分析，把证据和缺口带进项目评估。一个人可以轮流做四岗；团队可以按职责接手。
 
 ## 装好，然后直接说
 
@@ -73,10 +83,27 @@ python scripts/check_presentation.py
 
 [MIT License](LICENSE) · Made by Eric and Agents.
 
+## 告诉我，你在哪一步卡住
+
+用过一次后，欢迎留下：你想完成什么、给了哪些可公开资料、拿到了什么，以及还缺哪一步。
+
+[分享使用反馈或案例](https://github.com/NewenergyEric/game-market-intelligence/issues/new?template=use-case.yml)
+
 ## 四个岗位，共同做出值得做的游戏
 
 个人制作者可以轮流承担四个岗位；团队通过同一份资料交接：什么值得做、竞对做了什么、资源和体量如何评估，以及如何创作自己的核心美术。
 
-[岗位如何交接证据、范围与美术资产](docs/WORKFLOW.md) · [Art Director](https://github.com/NewenergyEric/art-director-skill)
+[岗位如何交接证据、范围与美术资产](docs/WORKFLOW.md) · [四岗位总览](https://github.com/NewenergyEric/NewenergyEric/blob/main/GAME-DEV-SKILLS.md)
+
+| 眼前的问题 | 从这个岗位开始 | 带到下一步的资料 |
+|---|---|---|
+| 什么值得做？ | [市场研究](https://github.com/NewenergyEric/game-market-intelligence) | 机会比较、来源与验证缺口 |
+| 竞对做了什么？ | [游戏拆解](https://github.com/NewenergyEric/game-reverse-analyst) | 规则、实现依据与资产 BOM |
+| 做得起，也做得完吗？ | [制作管理](https://github.com/NewenergyEric/game-production-manager) | SOW、工作包、依赖与验收 |
+| 核心美术如何建立？ | [美术总监](https://github.com/NewenergyEric/art-director-skill) | 共享规范、代表样板与项目包 |
+
+**个人创作者：** 从当前卡住的问题开始，按需要切换岗位。**团队：** 用实际报告、BOM、工作包和美术规范交接；每一步保留来源、版本与未定项。
+
+这是协作方法，当前没有自动串行执行四个 Agent 的编排器。
 
 ![市场研究、竞品拆解、项目评估与核心美术创作；样板与成本反馈推动前序决定修订。](assets/readme/workflow-zh.png)

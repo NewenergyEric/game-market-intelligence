@@ -1,4 +1,6 @@
-[中文](README.zh.md)
+[中文](README.md)
+
+[**Game Dev Skills**](https://github.com/NewenergyEric/NewenergyEric/blob/main/GAME-DEV-SKILLS.en.md) · [Market research](https://github.com/NewenergyEric/game-market-intelligence/blob/main/README.en.md) · [Reverse analysis](https://github.com/NewenergyEric/game-reverse-analyst/blob/main/README.en.md) · [Production planning](https://github.com/NewenergyEric/game-production-manager/blob/main/README.en.md) · [Art direction](https://github.com/NewenergyEric/art-director-skill/blob/main/README.en.md)
 
 # Game Market Intelligence Director
 
@@ -12,6 +14,14 @@ A market decision connects audience and genre with IP, regional channels, cultur
 </picture>
 
 [Download the full 24-second introduction · MP4](assets/readme/hero-en.mp4?raw=true) · [GIF](assets/readme/hero-en.gif) · [Transcript](assets/readme/transcript-en.md)
+
+## Why this exists
+
+**A greenlight needs a comparison you can reason about.**
+
+Charts, storefronts and industry reports each tell part of the story. The decision connects audience, genre, region, payment and the team’s content capacity. Research should leave sources, meaningful differences and the next questions to test.
+
+This is the market role in Game Dev Skills. Narrow the directions worth studying, hand the questions to reverse analysis, and carry evidence and gaps into production assessment. A solo creator can wear all four hats; a team can hand off by role.
 
 ## Install, then ask your agent
 
@@ -73,10 +83,27 @@ python scripts/check_presentation.py
 
 [MIT License](LICENSE) · Made by Eric and Agents.
 
+## Tell me where the handoff breaks
+
+After trying one task, share the goal, public inputs, actual output and what was still missing.
+
+[Share feedback or a case](https://github.com/NewenergyEric/game-market-intelligence/issues/new?template=use-case.yml)
+
 ## Four roles. One game worth making.
 
 For a solo creator these are four hats; for a team they are connected responsibilities. Explore what is worth making, what competitors do, the resources it requires, and the original art that defines it.
 
-[How the roles exchange evidence, scope and visual assets](docs/WORKFLOW.en.md) · [Art Director](https://github.com/NewenergyEric/art-director-skill)
+[How the roles exchange evidence, scope and visual assets](docs/WORKFLOW.en.md) · [Explore all four roles](https://github.com/NewenergyEric/NewenergyEric/blob/main/GAME-DEV-SKILLS.en.md)
+
+| Your question | Start here | Carry forward |
+|---|---|---|
+| What is worth making? | [Market research](https://github.com/NewenergyEric/game-market-intelligence/blob/main/README.en.md) | Options, sources and validation gaps |
+| How does it work? | [Reverse analysis](https://github.com/NewenergyEric/game-reverse-analyst/blob/main/README.en.md) | Rules, implementation evidence and asset BOM |
+| Can we scope and deliver it? | [Production planning](https://github.com/NewenergyEric/game-production-manager/blob/main/README.en.md) | SOW, work packages, dependencies and acceptance |
+| What defines the art? | [Art direction](https://github.com/NewenergyEric/art-director-skill/blob/main/README.en.md) | Shared rules, representative samples and project pack |
+
+**Solo creator:** start with the question blocking you and switch roles as needed. **Team:** hand off actual reports, BOMs, work packages and art rules, keeping sources, versions and open decisions visible.
+
+This is a collaboration method; it does not include an orchestrator that automatically runs four agents in sequence.
 
 ![Market intelligence → competitor analysis → production assessment → original art direction; prototype and cost feedback revise earlier decisions.](assets/readme/workflow-en.png)
